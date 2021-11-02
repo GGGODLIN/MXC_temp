@@ -1,0 +1,52 @@
+@import '~@/mixins.less';
+
+.items {
+  padding: 0 15px 20px 15px;
+
+  label {
+    color: var(--main-text-1);
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+  .remark {
+    font-size: 16px;
+  }
+  .address {
+    font-size: 12px;
+    color: var(--main-text-1);
+  }
+}
+
+.item {
+  .flex-between-center;
+  margin: 10px 0;
+  border-radius: 4px;
+  height: 70px;
+  padding: 0 15px;
+  background-color: var(--background-color-3);
+}
+
+.box {
+  .flex-left-center;
+  flex: 1;
+  img {
+    width: 40px;
+  }
+  .coin {
+    margin: 0 20px;
+    p {
+      color: var(--main-text-1);
+    }
+  }
+}
+
+.status {
+  font-size: 14px;
+  text-align: right;
+  span {
+    font-size: 10px;
+    color: var(--main-text-1);
+  }
+}

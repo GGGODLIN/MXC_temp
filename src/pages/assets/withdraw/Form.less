@@ -1,0 +1,90 @@
+@import '~@/mixins.less';
+
+.wrap {
+  padding: 10px 20px 30px;
+}
+
+.item {
+  margin: 20px 0;
+}
+
+.fee {
+  .flex-between-center;
+  margin-top: 7px;
+  color: var(--main-text-2);
+}
+
+.memo {
+  :global {
+    .am-checkbox-agree {
+      margin-left: 0;
+      font-size: 12px;
+
+      label {
+        color: var(--main-text-1);
+      }
+      span {
+        color: var(--down-color);
+      }
+    }
+
+    .am-checkbox-inner {
+      border-radius: 3px;
+      width: 16px;
+      height: 16px;
+      &:after {
+        top: 0;
+        right: 4px;
+      }
+    }
+
+    .am-input-item.am-list-item {
+      border: 1px solid var(--down-color);
+      caret-color: var(--down-color);
+
+      &.am-input-focus {
+        border-color: var(--down-color);
+      }
+      .am-input-extra {
+        color: var(--down-color);
+      }
+    }
+  }
+
+  .checkbox {
+    flex: 1;
+
+    label {
+      font-size: 13px;
+      color: var(--main-text-1);
+    }
+    span {
+      color: var(--down-color);
+    }
+  }
+  .desc {
+    margin-top: 5px;
+    color: var(--main-text-1);
+    i {
+      margin-right: 5px;
+      color: var(--down-color);
+      vertical-align: middle;
+    }
+  }
+}
+
+.tips {
+  font-size: 12px;
+  color: var(--main-text-2);
+  margin: 40px 0;
+}
+
+.error {
+  color: var(--down-color);
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.extra {
+  font-size: 12px;
+}

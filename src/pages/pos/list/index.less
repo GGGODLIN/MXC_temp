@@ -1,0 +1,226 @@
+@import '~@/mixins.less';
+
+.posList {
+  .banner {
+    height: 206px;
+    background: url('@/assets/img/pos/list-banner.png') no-repeat center;
+    background-size: 100%;
+    border-top: 1px solid transparent;
+
+    h1 {
+      color: #fff;
+      margin: 63px auto 0 17px;
+      font-size: 24px;
+    }
+
+    h2 {
+      color: #7bb6b0;
+      margin-left: 17px;
+      font-size: 14px;
+    }
+  }
+
+  .listBox {
+    background: #004f48;
+    padding: 12px 12px 0;
+
+    .head {
+      height: 43px;
+      border-bottom: 1px solid #00453f;
+      .flex-between-center();
+
+      h2 {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 0;
+      }
+
+      .link {
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+
+    .class {
+      padding: 12px 0;
+      display: flex;
+
+      span {
+        width: 96px;
+        border-radius: 4px;
+        color: #fff;
+        border: 1px solid #fff;
+        line-height: 28px;
+        text-align: center;
+        margin-right: 10px;
+
+        &.active {
+          color: #008477;
+          background-color: #fff;
+        }
+      }
+    }
+
+    .list {
+      height: calc(100vh - 340px);
+      overflow-y: scroll;
+    }
+
+    .coins {
+      height: 67px;
+      background-color: #fff;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      margin-top: 12px;
+      border-radius: 4px;
+
+      .mxcPal {
+        height: 17px;
+        width: auto;
+      }
+
+      img {
+        width: 42px;
+        height: 42px;
+        margin-right: 5px;
+      }
+
+      b {
+        font-size: 18px;
+        color: #333;
+        display: block;
+      }
+
+      span {
+        font-size: 12px;
+        color: #8e8e8e;
+      }
+
+      .currency {
+        flex: 1;
+
+        .hold {
+          color: #41b37d;
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+
+      .rate {
+        text-align: right;
+      }
+    }
+  }
+
+  .listSwarp {
+    background: #004f48;
+    .inner-height(315px);
+
+    .head {
+      height: 43px;
+      border-bottom: 1px solid #00453f;
+      .flex-between-center();
+
+      h2 {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 0;
+      }
+
+      .link {
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+
+    .class {
+      padding: 12px 0;
+
+      span {
+        display: inline-block;
+        width: 96px;
+        height: 28px;
+        border-radius: 4px;
+        color: #fff;
+        border: 1px solid #fff;
+        line-height: 28px;
+        text-align: center;
+
+        &.active {
+          color: #008477;
+          background-color: #fff;
+        }
+
+        &:first-of-type {
+          margin-right: 24px;
+        }
+      }
+    }
+
+    .list {
+      overflow-y: scroll;
+      height: 100%;
+    }
+
+    .coins {
+      background-color: #fff;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      border-radius: 4px;
+      margin: 0 14px 10px;
+      position: relative;
+
+      .mxcPal {
+        height: 17px;
+        width: auto;
+      }
+
+      img {
+        width: 42px;
+        height: 42px;
+        margin-right: 5px;
+      }
+
+      b {
+        font-size: 18px;
+        color: #333;
+        display: block;
+      }
+
+      span {
+        font-size: 12px;
+        color: #8e8e8e;
+      }
+
+      .currency {
+        flex: 1;
+
+        .hold {
+          color: #41b37d;
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+
+      .rate {
+        text-align: right;
+      }
+
+      .tag {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: #fff;
+        background: linear-gradient(90deg, #25ea92, #16fbd9 100%);
+        font-size: 10px;
+        padding: 1px 4px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+    }
+  }
+}

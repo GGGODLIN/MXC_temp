@@ -1,0 +1,277 @@
+.orderContent {
+  // padding: 23px 15px;
+  padding-top: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  // height: 100vh;
+  overflow: auto;
+  .orderHeader {
+    display: flex;
+
+    div:nth-of-type(1) {
+      flex: 2;
+    }
+    div:nth-of-type(2) {
+      flex: 1;
+    }
+
+    img {
+      width: 46px;
+      height: 46px;
+    }
+
+    .headerLeft {
+      text-align: left;
+      font-size: 22px;
+      font-weight: 500;
+      padding-top: 5px;
+
+      .headerTime {
+        padding-left: 16px;
+      }
+    }
+
+    .headerRight {
+      text-align: right;
+    }
+  }
+
+  .headerPrompnt {
+    font-size: 12px;
+    color: var(--main-text-2);
+    margin-top: 8px;
+  }
+
+  .headerTopContent {
+    display: flex;
+    font-size: 12px;
+    margin-top: 12px;
+
+    .headerTradingInfo {
+      flex: 1;
+
+      span {
+        display: block;
+        padding-top: 12px;
+        color: var(--main-text-2);
+      }
+    }
+
+    .headerRightTradingInfo {
+      flex: 1;
+      text-align: right;
+
+      span {
+        display: block;
+        padding-top: 8px;
+        font-size: 14px;
+      }
+
+      span:nth-of-type(1) {
+        font-size: 20px;
+        padding-top: 5px;
+        color: var(--main-text-1);
+      }
+    }
+  }
+
+  .orderPaymentUserName {
+    margin-top: 4px;
+
+    .orderPaymentTitle {
+      font-size: 16px;
+      line-height: 46px;
+      font-weight: 550;
+      border-bottom: 1px solid var(--divider-color);
+    }
+
+    .orderPaymentUser {
+      margin-top: 11px;
+      font-size: 12px;
+
+      .userColor {
+        color: var(--up-color);
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+  }
+
+  .orderPaymentContent {
+    display: flex;
+
+    div {
+      flex: 1;
+      width: 98px;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      background: rgba(241, 243, 246, 1);
+      border-radius: 4px;
+      font-size: 14px;
+      //   font-weight: 550;
+    }
+
+    div:not(:first-child) {
+      margin-left: 26px;
+    }
+
+    .tabActive {
+      border: 1px solid var(--up-color);
+      background: var(--background-color-4) !important;
+    }
+    .payMethodBtn {
+      background: var(--background-color-3);
+    }
+  }
+
+  .transferPrompt {
+    padding: 13px 12px;
+    background: var(--background-color-2);
+    margin-top: 12px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+}
+.footerBtnContent {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+
+  .footerBtn {
+    // padding: 12px;
+    display: flex;
+    a {
+      &:hover {
+        color: #0000004d !important;
+      }
+    }
+    // background: #e3fbf3;
+  }
+
+  .clearBtn {
+    width: 113px;
+    height: 38px;
+    border-radius: 2px;
+    //   opacity: 0.5;
+    text-align: center;
+    line-height: 38px;
+    color: #a8afc3;
+    border: 1px solid #dcdcdc;
+
+    display: inline-block;
+    background: #ffffff;
+    bottom: 0;
+    opacity: 1;
+  }
+  .clearAppealBtn {
+    background: #eaf8f2;
+    color: #2ebc84;
+    opacity: 1;
+  }
+  .sellClearBtn {
+    width: 80%;
+    height: 38px;
+    border-radius: 20px;
+    //   opacity: 0.5;
+    background: #d0f2e9;
+    text-align: center;
+    line-height: 38px;
+    color: #2ebc84;
+    border: 1px solid rgba(0, 211, 139, 1);
+    display: inline-block;
+    bottom: 0;
+    margin-left: 35px;
+  }
+
+  .WaitForTheRelease {
+    width: 220px;
+    height: 38px;
+    background: rgba(46, 188, 132, 1);
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    color: #ffffff;
+    margin-left: 12px;
+  }
+  .awaitRelease {
+    width: 220px;
+    height: 38px;
+
+    border-radius: 2px;
+    background: #2ebc84;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    color: #ffffff;
+    margin-left: 12px;
+  }
+}
+.chatContent {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 44px);
+}
+
+.iconsVip {
+  color: #2ebc84;
+  margin-left: 2px;
+}
+.telImg {
+  height: 36px;
+}
+.telFlag {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+}
+.appealBtn {
+  position: fixed;
+  bottom: 45px;
+  width: 100%;
+  div {
+    width: 345px;
+    height: 38px;
+    margin: auto;
+    text-align: center;
+    line-height: 38px;
+    border: 1px solid var(--border-color-2);
+    border-radius: 2px;
+  }
+}
+.appealPrompnt {
+  color: #2ebc84;
+  font-size: 12px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+.timeColor {
+  color: var(--main-text-1);
+  font-size: 12px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  .time {
+    color: #2ebc84;
+  }
+}
+:global {
+  .countdownAppeal {
+    font-size: 14px !important;
+  }
+}
+.appealFooterBtn {
+  width: 113px;
+  height: 38px;
+  border: 1px solid #e5e8f8 !important;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  line-height: 10.13333vw;
+  color: #a8afc3;
+  display: inline-block;
+  background: #ffffff;
+  bottom: 0;
+  opacity: 1;
+}

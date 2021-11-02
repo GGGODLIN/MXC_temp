@@ -1,0 +1,79 @@
+@import '~@/mixins.less';
+
+.title {
+  font-size: 16px;
+  span {
+    color: var(--main-text-1);
+    margin: 0 15px;
+    display: inline-block;
+    padding-bottom: 2px;
+  }
+  .active {
+    color: var(--main-text-1);
+    border-bottom: 2px solid var(--main-text-1);
+  }
+}
+
+.items {
+  padding: 0 15px 20px 15px;
+  label {
+    color: var(--main-text-1);
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .currency {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+}
+.item {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: var(--background-color-3);
+  border-radius: 4px;
+}
+.box {
+  .flex-between-center;
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 10px;
+}
+.item {
+  font-size: 12px;
+}
+.status {
+  font-size: 14px;
+}
+.right {
+  text-align: right;
+  p {
+    margin-top: 5px;
+  }
+}
+.block {
+  .flex-between-center;
+  margin-top: 10px;
+  i {
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+}
+.fail {
+  .currency,
+  .status,
+  span {
+    color: var(--main-text-1);
+  }
+  span {
+    color: var(--up-color);
+  }
+}
+.revoke {
+  span {
+    color: var(--main-text-1);
+  }
+  .status {
+    color: var(--up-color);
+  }
+}

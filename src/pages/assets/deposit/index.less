@@ -1,0 +1,141 @@
+@import '~@/mixins.less';
+
+.wrap {
+  padding: 0 20px 20px;
+}
+
+.bar {
+  .flex-between-center;
+  border-radius: 4px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin: 20px 0;
+  color: inherit;
+
+  .select {
+    font-size: 12px;
+  }
+}
+
+.tabWrapper {
+  margin: 10px 0;
+  overflow-x: scroll;
+
+  .tab {
+    .flex-left-center;
+    width: max-content;
+
+    div {
+      font-size: 10px;
+      background-color: var(--background-color-3);
+      border-radius: 4px;
+      margin-right: 10px;
+      text-align: center;
+      border: 1px solid transparent;
+      position: relative;
+      padding: 4px 12px;
+
+      i {
+        position: absolute;
+        bottom: -11px;
+        right: -9px;
+        width: 32px;
+        height: 32px;
+        color: var(--up-color);
+        display: none;
+      }
+    }
+
+    .active {
+      border: 1px solid var(--up-color);
+
+      i {
+        display: block;
+      }
+    }
+
+    .disabled {
+      color: var(--main-text-2);
+      pointer-events: none;
+    }
+  }
+}
+
+.main {
+  background-color: var(--background-color-3);
+  border-radius: 4px;
+  text-align: center;
+
+  :global {
+    .am-input-item .am-input-control input {
+      font-size: 12px;
+
+      &:disabled {
+        background-color: transparent;
+        color: var(--main-text-1);
+      }
+    }
+  }
+}
+
+.QRcode {
+  background-color: #fff;
+  padding: 10px;
+  display: inline-block;
+  margin: 30px 0 10px 0;
+  height: 120px;
+  width: 125px;
+  border-radius: 4px;
+}
+
+.address {
+  margin-top: 30px;
+
+  p {
+    margin-bottom: 5px;
+    color: var(--main-text-1);
+  }
+}
+
+.extra {
+  color: var(--main-text-2);
+  padding-left: 15px;
+  border-left: 1px solid var(--divider-color);
+}
+
+.tips {
+  margin-top: 30px;
+
+  p {
+    font-size: 12px;
+    color: var(--main-text-1);
+  }
+}
+
+.memo {
+  border-color: red !important;
+
+  input {
+    color: red !important;
+    text-align: center;
+  }
+
+  span {
+    color: red;
+  }
+}
+
+.emptyNode {
+  height: 300px;
+  background: var(--background-color-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    color: var(--up-color);
+    border: 1px solid var(--up-color);
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,59 @@
+.shareImgContent {
+  margin-top: 30px;
+  .shareImgList {
+    position: relative;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .post {
+      display: inline-block;
+      width: 110px;
+      img {
+        width: 110px;
+        height: 190px;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.2s;
+      }
+
+      &.postActive {
+        img {
+          transform: translateY(-10px);
+        }
+      }
+      :global {
+        .am-checkbox-agree {
+          width: 21px;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+
+  .imgokBtn {
+    width: 345px;
+    margin: auto;
+    margin-top: 25px;
+    height: 40px;
+    line-height: 40px;
+    background: var(--up-color);
+    border-radius: 4px;
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      color: #ffffff;
+    }
+  }
+}
+.imgokBtn {
+  text-align: center;
+  color: #ffffff;
+  a {
+    text-align: center;
+  }
+}
+.qrcode {
+  display: none;
+}

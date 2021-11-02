@@ -1,0 +1,54 @@
+.modalBox {
+  text-align: left;
+  padding: 30px 0;
+
+  h3 {
+    font-size: 16px;
+    color: var(--main-text-1);
+  }
+}
+
+.textarea {
+  height: 420px;
+  overflow-y: scroll;
+  font-size: 12px;
+  color: var(--main-text-1);
+}
+
+.registerBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 12px;
+
+  :global {
+    .am-checkbox-wrapper {
+      color: var(--main-text-1);
+    }
+
+    .am-checkbox-agree {
+      margin-left: 0;
+      font-size: 12px;
+    }
+
+    .am-checkbox {
+      margin-right: 10px;
+    }
+
+    .am-checkbox-inner {
+      border-radius: 3px;
+      width: 16px;
+      height: 16px;
+
+      &:after {
+        top: 0;
+        right: 4px;
+      }
+    }
+
+    .am-button-primary {
+      border-radius: 20px;
+    }
+  }
+}

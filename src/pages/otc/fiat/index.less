@@ -1,0 +1,102 @@
+.fiatContent {
+  font-size: 12px;
+  margin-top: 65px;
+  .fiatTop {
+    width: 345px;
+    height: 34px;
+    background: var(--background-color-3);
+    border-radius: 4px;
+    margin: auto;
+    line-height: 34px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 15px;
+    color: var(--main-text-2);
+    .centerContent {
+      display: inline-block;
+      position: absolute;
+      left: 145px;
+      margin-left: 19px;
+      padding-right: 34px;
+      .topPoint {
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background: var(--main-text-3);
+        border-radius: 50%;
+        margin: 3px 5px;
+      }
+    }
+    .rightCertification {
+      position: absolute;
+      right: 33px;
+    }
+  }
+  .linesContent {
+    width: 345px;
+    padding: 14px 0px;
+    margin: auto;
+    line-height: 17px;
+    font-weight: 400;
+    color: var(--main-text-2);
+    border-bottom: 1px solid var(--divider-color);
+    div:nth-of-type(1) {
+      width: 70%;
+      .lineesmoney {
+        padding-left: 5px;
+      }
+    }
+    div:nth-of-type(2) {
+      width: 30%;
+      text-align: right;
+      color: var(--up-color);
+    }
+    div {
+      display: inline-block;
+    }
+  }
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--background-color-4);
+  background-size: 100vw 100vh;
+  .title {
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    .otc {
+      margin-left: 32px;
+      position: relative;
+      color: var(--up-color);
+      &::after {
+        content: ' ';
+        position: absolute;
+        width: 36px;
+        height: 2px;
+        background-color: var(--up-color);
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(100% + 5px);
+      }
+    }
+    .spot {
+      position: relative;
+      color: var(--main-text-1);
+    }
+  }
+
+  .pairWrapper {
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+}

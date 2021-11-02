@@ -1,0 +1,240 @@
+@import '~@/mixins.less';
+
+.topBar {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.topInner {
+  padding-left: 15px;
+  border-left: 1px solid var(--divider-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.currentWrapper {
+  display: flex;
+  .bigFont {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  img {
+    width: 12px;
+    height: 16px;
+    margin: 8px 0 0 8px;
+  }
+}
+
+.buy {
+  color: var(--up-color);
+}
+
+.sell {
+  color: var(--down-color);
+}
+
+.infoWrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  line-height: 18px;
+  margin-top: 5px;
+  .infoValue {
+    margin-left: 20px;
+    text-align: right;
+  }
+}
+
+.klineAction {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.klineActionRange {
+  display: flex;
+  font-size: 12px;
+  .klineActionsInterval {
+    color: var(--main-text-1);
+    padding-bottom: 5px;
+    margin-right: 15px;
+    display: flex;
+    align-items: flex-end;
+    &.activeInterval {
+      color: var(--main-text-1);
+      box-shadow: inset 0 -1px 0 0 var(--main-text-1);
+    }
+    &.smallGap {
+      margin-right: 10px;
+    }
+  }
+}
+
+.singleSelectOption {
+  line-height: 36px;
+  border-bottom: 1px solid var(--divider-color);
+  &.activeOption {
+    color: var(--up-color);
+  }
+  &.singleSelectCancel {
+    border: none;
+    color: var(--down-color);
+  }
+}
+
+.tvChartContainer {
+  width: 375px;
+  // height: 500px;
+  height: 55vh;
+}
+
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 4px;
+  margin-bottom: 2px;
+  border-style: solid;
+  border-color: transparent var(--main-color-light) var(--main-color-light) transparent;
+}
+
+.actionTabs {
+  background-color: var(--background-color-3);
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  .actionTab {
+    font-size: 14px;
+    color: var(--main-text-1);
+    padding: 6px 0;
+    margin-right: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    &.activeAction {
+      color: var(--main-text-1);
+      box-shadow: inset 0 -1px 0 0 var(--main-text-1);
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.marketsWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.sideWrapper {
+  width: 165px;
+}
+
+.tableRow {
+  display: flex;
+  justify-content: space-between;
+  height: 26px;
+  line-height: 26px;
+  position: relative;
+  overflow: hidden;
+  // color: var(--main-text-3);
+  font-size: 12px;
+}
+
+.bar {
+  position: absolute;
+  top: 2px;
+  height: 22px;
+  width: 100%;
+  transform: translateX(100%);
+  transition: all 0.2s;
+}
+
+.bidBar {
+  right: 0;
+  left: auto;
+  background-color: rgba(0, 211, 139, 0.05);
+}
+
+.askBar {
+  right: auto;
+  left: 0;
+  background-color: rgba(252, 74, 91, 0.1);
+}
+
+.marketTitle {
+  color: var(--main-text-1);
+  border-bottom: 1px solid var(--divider-color);
+  font-size: 12px;
+  margin: 5px 0 10px 0;
+}
+
+.tradesWrapper {
+  padding: 15px;
+}
+
+.watermark {
+  position: absolute;
+  width: 120px;
+  height: 24px;
+  pointer-events: none;
+  left: 10px;
+  top: 290px;
+  z-index: 2;
+  opacity: 0.2;
+}
+
+.bottomAction {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  background-color: var(--background-color-2);
+  .safe-inset-bottom();
+  .bottomInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+  .bottomBtn {
+    width: 170px;
+  }
+}
+
+.tabsWrapper {
+  padding-bottom: 80px;
+}
+
+.currencyWrapper {
+  padding: 0 15px;
+  font-size: 12px;
+  .infoItem {
+    display: flex;
+    justify-content: space-between;
+    line-height: 32px;
+  }
+  .infoContent {
+    display: block;
+    color: var(--main-text-1);
+    max-width: 220px;
+    .ellipsis();
+  }
+  .intro {
+    margin-top: 20px;
+    padding: 30px 0;
+    line-height: 20px;
+    border-top: 1px solid var(--divider-color);
+  }
+}
+
+.landscapeTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 10px;
+}

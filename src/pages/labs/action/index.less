@@ -1,0 +1,63 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.boxWrap {
+  padding: 12px 25px;
+  background: var(--background-color-2);
+  margin-bottom: 8px;
+}
+.optionBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.available {
+  b {
+    font-size: 12px;
+    color: var(--main-text-1);
+  }
+
+  p {
+    height: 33px;
+    background: #335655;
+    border-radius: 17px;
+    color: #00d38b;
+    text-align: center;
+    line-height: 33px;
+    font-weight: bold;
+  }
+}
+
+.all {
+  color: var(--up-color);
+}
+.button {
+  margin-top: 30px;
+
+  p {
+    margin-bottom: 4px;
+  }
+  :global {
+    .am-checkbox-agree {
+      margin-left: 0;
+
+      .am-checkbox-agree-label {
+        color: var(--main-text-1);
+        font-size: 12px;
+        margin-left: 18px;
+      }
+    }
+    .am-checkbox-inner {
+      width: 14px;
+      height: 14px;
+      &::after {
+        width: 50%;
+        height: 50%;
+        left: 3px;
+      }
+    }
+  }
+}

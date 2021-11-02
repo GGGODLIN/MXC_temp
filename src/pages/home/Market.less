@@ -1,0 +1,59 @@
+@import '~@/mixins.less';
+
+.market {
+  padding: 6px 15px 0;
+  :global {
+    .am-tabs-default-bar-underline {
+      margin-left: 12%;
+    }
+  }
+
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid var(--divider-color);
+    overflow-x: auto;
+    span {
+      font-size: 16px;
+      margin-right: 24px;
+      padding-bottom: 4px;
+      white-space: nowrap;
+      &.active {
+        color: var(--up-color);
+        border-bottom: 2px solid var(--up-color);
+        // &::after {
+        //   content: '';
+        //   display: block;
+        //   width: 34px;
+        //   height: 2px;
+        //   background: var(--up-color);
+        //   margin-left: 50%;
+        //   transform: translateX(-50%);
+        //   margin-top: 4px;
+        // }
+      }
+    }
+    .down {
+      &.active {
+        color: var(--down-color);
+        border-bottom: 2px solid var(--down-color);
+      }
+    }
+  }
+  .tableHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--main-text-2);
+    font-size: 12px;
+    margin: 4px 0 6px;
+    .currency {
+      flex: 1;
+    }
+    .price {
+      width: 33.33%;
+    }
+    .rate {
+      width: 80px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.kline {
+  width: 100%;
+  // height: 500px;
+  //height: 372px;
+}
+.TVChartContainer {
+  width: 100%;
+  // height: 500px;
+  height: 372px;
+  background-color: var(--trade-box-bg);
+}
+
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 4px;
+  margin-bottom: 2px;
+  border-style: solid;
+  border-color: transparent var(--main-color-light) var(--main-color-light) transparent;
+}
+
+.klineAction {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.klineActionRange {
+  display: flex;
+  font-size: 12px;
+  .klineActionsInterval {
+    color: var(--main-text-1);
+    padding-bottom: 5px;
+    margin-right: 15px;
+    display: flex;
+    align-items: flex-end;
+    &.activeInterval {
+      color: var(--main-text-1);
+      box-shadow: inset 0 -1px 0 0 var(--main-text-1);
+    }
+    &.smallGap {
+      margin-right: 10px;
+    }
+  }
+}
+
+.singleSelectOption {
+  line-height: 36px;
+  border-bottom: 1px solid var(--divider-color);
+  &.activeOption {
+    color: var(--up-color);
+  }
+  &.singleSelectCancel {
+    border: none;
+    color: var(--down-color);
+  }
+}
+
+.landscapeTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 10px;
+}
+
+.watermark {
+  position: absolute;
+  width: 120px;
+  height: 24px;
+  pointer-events: none;
+  left: 10px;
+  top: 290px;
+  z-index: 2;
+  opacity: 0.2;
+}

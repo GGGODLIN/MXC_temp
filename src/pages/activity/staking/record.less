@@ -1,0 +1,52 @@
+.wrapper {
+  background-color: var(--background-color-4);
+
+  .title {
+    padding: 15px 15px 0;
+    margin-bottom: 0;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--main-text-1);
+  }
+
+  .loading {
+    text-align: center;
+    font-size: 14px;
+    color: var(--main-text-1);
+  }
+
+  .item {
+    padding: 0 15px;
+    margin-bottom: 24px;
+
+    &:first-child {
+      padding-top: 24px;
+    }
+
+    .value-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      p {
+        margin-bottom: 4px;
+        line-height: 20px;
+        font-size: 12px;
+        color: var(--main-text-1);
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

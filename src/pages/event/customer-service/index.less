@@ -1,0 +1,38 @@
+@import '~@/mixins.less';
+
+.btnChat {
+  min-width: 90px;
+  height: 40px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed !important;
+  bottom: 100px;
+  right: 15px;
+  background: linear-gradient(225deg, rgba(68, 69, 84, 1) 0%, rgba(32, 33, 42, 1) 100%);
+  z-index: 10;
+}
+.spinContent {
+  margin-top: 55%;
+  text-align: center;
+  :global {
+    .ant-spin {
+      color: #2ebc84;
+    }
+    .ant-spin-dot-item {
+      background-color: #2ebc84;
+    }
+  }
+  .prompnt {
+    color: var(--main-text-3);
+    margin-top: 10px;
+  }
+}
+
+:global {
+  .email {
+    color: #16b979;
+  }
+}

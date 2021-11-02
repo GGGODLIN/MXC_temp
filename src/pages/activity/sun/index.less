@@ -1,0 +1,286 @@
+.wrapper {
+  min-height: calc(100vh - 44px);
+  background-color: var(--background-color-3);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 184px;
+  background: #122732 url(@/assets/img/activity/sun/header-bg.png) no-repeat center/cover;
+  width: 100%;
+}
+
+.headerContent {
+  max-width: 230px;
+  margin-top: -22px;
+  margin-left: 20px;
+}
+
+.title {
+  margin-bottom: 4px;
+  line-height: 34px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.desc {
+  margin-bottom: 0;
+  line-height: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.content {
+  padding: 0 15px 40px;
+  margin-top: -50px;
+}
+
+.info {
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(46, 188, 132, 0.1) 0%, rgba(255, 255, 255, 0) 100%), var(--background-color-4);
+  box-shadow: 0 4px 40px rgba(13, 32, 45, 0.05);
+}
+
+.infoTitle {
+  margin-bottom: 8px;
+  line-height: 22px;
+  font-size: 18px;
+  color: #151617;
+}
+
+.infoDesc {
+  margin-bottom: 4px;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #97a1a9;
+}
+
+.infoTip {
+  margin-bottom: 0;
+  line-height: 18px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #16b979;
+}
+
+.list {
+  // padding: 15px;
+  // margin-bottom: 15px;
+  // border-radius: 8px;
+  // background-color: var(--background-color-4);
+  // box-shadow: 0 4px 40px rgba(13, 32, 45, 0.05);
+}
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.itemHeaderRight {
+  text-align: right;
+}
+
+.listPhase {
+  margin-bottom: 0;
+  line-height: 24px;
+  font-size: 16px;
+  color: #151617;
+}
+
+.listMine {
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #16b979;
+}
+
+.fontBlack {
+  color: #151617;
+}
+
+.listItem {
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background-color: white;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.itemHeaderLeft {
+  display: flex;
+  align-items: center;
+}
+
+.currencyIcon {
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+  border-radius: 100%;
+}
+
+.currencyName {
+  margin-right: 3px;
+  line-height: 22px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.totalSize {
+  line-height: 22px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.normalSize {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.itemInfo {
+  background-color: #f7f8f9;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 26px;
+}
+
+.descLabel {
+  color: #97a1a9;
+  display: inline-block;
+}
+
+.themeLock {
+  width: 30px;
+}
+
+.itemInfoGroup {
+  min-width: 39%;
+
+  &:nth-child(2) {
+    min-width: 33%;
+  }
+
+  &:last-child {
+    min-width: 28%;
+  }
+}
+
+.itemKeyValue {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.itemKey {
+  display: block;
+  margin-bottom: 4px;
+  line-height: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--main-text-3);
+}
+
+.itemValue {
+  display: block;
+  line-height: 16px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--main-text-1);
+}
+
+.textRight {
+  text-align: right;
+}
+
+.tip {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--background-color-4);
+  box-shadow: 0 4px 40px rgba(13, 32, 45, 0.05);
+}
+
+.tipTitle {
+  margin-bottom: 8px;
+  line-height: 22px;
+  font-size: 16px;
+  color: var(--main-text-1);
+}
+
+.tipDesc {
+  margin-bottom: 0;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--main-text-3);
+}
+
+.tips {
+  color: #151617;
+  font-size: 12px;
+  padding: 12px 8px;
+  margin-bottom: 0;
+}
+
+.currencyTip {
+  margin-left: 2px;
+}
+
+.bottomTime {
+  margin-top: 4px;
+  color: #97a1a9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  .iconTime {
+    font-size: 12px;
+    margin-right: 4px;
+  }
+}
+
+.speBgColor {
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(46, 188, 132, 0.1) 0%, rgba(255, 255, 255, 0) 80%), var(--background-color-4);
+  box-shadow: 0 4px 40px rgba(13, 32, 45, 0.05);
+  padding: 15px;
+}
+
+.btnJoin {
+  height: 44px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentNum {
+  font-size: 16px;
+  font-weight: bold;
+  color: #16b979;
+}

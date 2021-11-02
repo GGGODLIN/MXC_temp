@@ -1,0 +1,117 @@
+.head {
+  height: 177px;
+  padding: 15px;
+  background: #008477 url('@/assets/img/pos/bg-mask.png') no-repeat bottom center;
+  background-size: 100%;
+  text-align: center;
+  .coinInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    margin-bottom: 11px;
+    .name {
+      display: flex;
+      align-items: center;
+    }
+  }
+  img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  h2 {
+    font-size: 24px;
+    color: #fff;
+  }
+  .rate {
+    text-align: right;
+    b {
+      display: block;
+      font-size: 26px;
+      i {
+        font-style: normal;
+        font-size: 14px;
+      }
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+}
+.optBox {
+  padding: 10px 15px;
+  .rules {
+    // padding: 12px 17px;
+    padding: 12px 16px 12px 24px;
+    background-color: var(--background-color-2);
+    border-radius: 4px;
+    list-style: decimal;
+    p,
+    li {
+      font-size: 12px;
+      color: var(--main-text-1);
+      margin-bottom: 5px;
+    }
+  }
+  .all {
+    color: var(--up-color);
+  }
+}
+
+.button {
+  margin-bottom: 20px;
+
+  p {
+    margin-bottom: 4px;
+  }
+  :global {
+    .am-checkbox-agree {
+      margin-left: 0;
+
+      .am-checkbox-agree-label {
+        color: var(--main-text-1);
+        font-size: 12px;
+        margin-left: 18px;
+      }
+    }
+    .am-checkbox-inner {
+      width: 14px;
+      height: 14px;
+      &::after {
+        width: 50%;
+        height: 50%;
+        left: 3px;
+      }
+    }
+  }
+  .link {
+    color: var(--up-color);
+  }
+}
+
+.scroll {
+  overflow: auto;
+  height: calc(100vh - 50px);
+}
+
+.incomming {
+  font-size: 12px;
+  margin-top: 5px;
+  b {
+    color: #2ebc84;
+  }
+}
+.headerPrompnt {
+  display: flex;
+  div {
+    font-size: 10px;
+    flex: 1;
+  }
+  div:nth-of-type(1) {
+    text-align: left;
+  }
+  div:nth-of-type(2) {
+    text-align: right;
+  }
+}

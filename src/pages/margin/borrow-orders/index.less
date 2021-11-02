@@ -1,0 +1,145 @@
+@import '~@/mixins.less';
+
+.title {
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+
+  & > div {
+    color: var(--main-text-1);
+
+    &:first-of-type {
+      margin-right: 15px;
+    }
+  }
+
+  .active {
+    position: relative;
+    color: var(--main-text-1);
+
+    &::after {
+      content: ' ';
+      position: absolute;
+      width: 36px;
+      height: 1px;
+      background-color: var(--main-text-1);
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(100% + 5px);
+    }
+  }
+}
+
+.wrapper {
+  .inner-height(44px);
+  // height: calc(100vh - 44px);
+
+  :global {
+    .am-tabs-tab-bar-wrap {
+      display: none;
+    }
+  }
+
+  .content {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .loading {
+    text-align: center;
+    font-size: 14px;
+    color: var(--main-text-2);
+  }
+}
+
+.tab {
+  overflow: inherit;
+  font-size: 16px;
+
+  div {
+    position: relative;
+    margin: 0 17px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      width: 70%;
+      height: 1px;
+      background-color: transparent;
+      transform: translateX(-50%);
+    }
+
+    &.active::after {
+      background-color: var(--main-text-1);
+    }
+  }
+}
+
+.OrderItem {
+  padding: 10px;
+  background-color: var(--background-color-2);
+  border-radius: 4px;
+  margin-bottom: 5px;
+  .head {
+    .flex-between-center();
+    h3 {
+      color: var(--main-text-1);
+      font-size: 16px;
+    }
+    span {
+      margin-right: 20px;
+      position: relative;
+      &:after {
+        display: block;
+        content: '';
+        height: 0;
+        width: 0;
+        border: 8px solid transparent;
+        border-left-color: var(--main-color-light);
+        position: absolute;
+        top: 2px;
+        right: -22px;
+      }
+    }
+    .uncomplite {
+      color: var(--up-color);
+      &:after {
+        border-left-color: var(--up-color);
+      }
+    }
+    .complite {
+      color: var(--main-text-2);
+    }
+  }
+  .body {
+    display: flex;
+    align-items: center;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      &:nth-of-type(3) {
+        text-align: right;
+        width: 30%;
+      }
+      &:nth-of-type(1) {
+        width: 40%;
+      }
+      span {
+        color: var(--main-text-2);
+      }
+      b {
+        display: block;
+        .ellipsis();
+      }
+    }
+  }
+}
+
+.custom-body {
+  padding: 15px 15px 0;
+}

@@ -1,0 +1,437 @@
+.wrapper {
+  padding-bottom: 60px;
+  background-color: #151b38;
+}
+
+.top {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  background: url(@/assets/img/votingNew/top-bg.png) no-repeat center top/100% 267px;
+
+  .title {
+    padding: 0 15px;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+
+    span {
+      display: block;
+      font-size: 34px;
+    }
+  }
+
+  .detail {
+    padding: 0 15px;
+    margin-top: 37px;
+    margin-bottom: 0;
+    line-height: 20px;
+    //text-align: center;
+    font-size: 12px;
+    color: #dbdcf2;
+  }
+
+  .vote-tip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  &.en-US {
+    .title {
+      font-size: 20px;
+
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.content {
+  padding: 0 15px;
+
+  .votes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+    .new {
+      line-height: 28px;
+      color: #1874ff;
+    }
+
+    .vs {
+      width: 32px;
+      height: 30px;
+      margin: 0 10px;
+      background: url(@/assets/img/votingGovern/vs.png) no-repeat left top/contain;
+    }
+
+    .old {
+      line-height: 28px;
+      color: #ff2e00;
+    }
+
+    &.en-US {
+      font-size: 18px;
+    }
+  }
+
+  .progress {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18px;
+    padding: 0 10px;
+    margin-bottom: 26px;
+
+    .new {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 18px;
+      padding-left: 8px;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+      line-height: 18px;
+      font-size: 12px;
+      color: #fff;
+      z-index: 1;
+      background-color: #1874ff;
+    }
+
+    .new-bar {
+      width: 50%;
+      min-width: 65px;
+      height: 18px;
+      margin-right: 1px;
+      transform: skew(20deg);
+      transition: width 0.5s ease-in;
+      background-color: #1874ff;
+    }
+
+    .old-bar {
+      flex-grow: 1;
+      min-width: 65px;
+      height: 14px;
+      transform: skew(20deg);
+      transition: width 0.5s ease-in;
+      background-color: #ff2e00;
+    }
+
+    .old {
+      position: absolute;
+      top: 2px;
+      right: 0;
+      height: 14px;
+      padding-right: 8px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      line-height: 14px;
+      font-size: 12px;
+      color: #fff;
+      z-index: 1;
+      background-color: #ff2e00;
+    }
+  }
+
+  .project {
+    margin-bottom: 30px;
+
+    .new,
+    .old {
+      padding-top: 12px;
+    }
+
+    :global {
+      .am-tabs-default-bar {
+        background-color: transparent !important;
+      }
+
+      .am-tabs-default-bar-tab-active {
+        color: #1874ff;
+      }
+
+      .am-tabs-default-bar-underline {
+        background-color: #1874ff;
+      }
+    }
+  }
+
+  .project-old {
+    :global {
+      .am-tabs-default-bar-tab-active {
+        color: #ff2e00;
+      }
+
+      .am-tabs-default-bar-underline {
+        background-color: #ff2e00;
+      }
+    }
+  }
+
+  .info {
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #dbdcf2;
+
+    .break {
+      display: inline-block;
+      width: 1px;
+      height: 10px;
+      margin: 0 11px;
+      transform: rotate(15deg);
+      background: #75799e;
+    }
+
+    .tip {
+      font-size: 10px;
+      color: #75799e;
+    }
+
+    //&.en-US {
+    //  .break {
+    //    margin: 0 5px;
+    //  }
+    //}
+  }
+
+  .choose-coin {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #dbdcf2;
+
+    .coin {
+      display: inline-block;
+      width: 100px;
+      height: 32px;
+      margin: 0 8px;
+      border: 1px solid #75799e;
+      border-radius: 2px;
+      line-height: 32px;
+      font-size: 14px;
+      text-align: center;
+      color: #75799e;
+      cursor: pointer;
+
+      &.active {
+        border-color: #1874ff !important;
+
+        span {
+          color: #1874ff;
+        }
+      }
+    }
+
+    :global {
+      .am-button-disabled {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .handle {
+    margin-bottom: 2px;
+
+    :global {
+      .am-input-item {
+        height: 40px;
+        margin-bottom: 16px;
+        border: 1px solid #75799e;
+        border-radius: 2px;
+        color: #dbdcf2;
+
+        .am-input-control input {
+          color: #dbdcf2;
+          caret-color: #1874ff;
+        }
+      }
+
+      .am-input-item.am-list-item.am-input-focus {
+        border-color: #1874ff;
+      }
+
+      .am-input-extra {
+        color: #dbdcf2;
+      }
+
+      .am-button {
+        height: 40px;
+        border: none;
+        border-radius: 2px;
+        font-size: 16px;
+        background-color: #1874ff;
+      }
+    }
+  }
+
+  .balance {
+    margin-bottom: 0;
+    line-height: 20px;
+    font-size: 12px;
+    color: #7e829c;
+  }
+
+  .old {
+    .choose-coin {
+      .coin {
+        &.active {
+          border-color: #ff2e00 !important;
+
+          span {
+            color: #ff2e00;
+          }
+        }
+
+        &.am-button-disabled {
+          border-color: #444b63;
+          color: #0c132c;
+          background-color: #444b63;
+        }
+      }
+
+      :global {
+        .am-button-disabled {
+          opacity: 0.4;
+        }
+      }
+    }
+
+    .handle {
+      :global {
+        .am-input-item {
+          .am-input-control input {
+            color: #ff2e00;
+            caret-color: #ff2e00;
+          }
+        }
+
+        .am-input-item.am-list-item.am-input-focus {
+          border-color: #ff2e00;
+        }
+
+        .am-button {
+          height: 40px;
+          border: none;
+          border-radius: 2px;
+          font-size: 16px;
+          background-color: #ff2e00;
+        }
+      }
+    }
+  }
+
+  .rule,
+  .detail {
+    padding: 20px 15px;
+    background: url(@/assets/img/votingGovern/rule-top-left.png) no-repeat left top/345px,
+      url(@/assets/img/votingGovern/rule-top-right.png) no-repeat right top/16px,
+      url(@/assets/img/votingGovern/rule-bottom-left.png) no-repeat left bottom/35px,
+      url(@/assets/img/votingGovern/rule-bottom-right.png) no-repeat right bottom/345px;
+
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px;
+      line-height: 38px;
+      letter-spacing: 0.1em;
+      font-weight: bold;
+      font-size: 18px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(180deg, #dbdcf2 -54.73%, rgba(219, 220, 242, 0.33) 156.26%);
+
+      .left-arrow {
+        width: 19px;
+        height: 18px;
+        margin-right: 10px;
+        background: url(@/assets/img/votingGovern/title-arraw.png) no-repeat left top/contain;
+      }
+
+      :global {
+        .title-x {
+          display: inline-block;
+          width: 15px;
+          height: 9px;
+          margin: 0 10px;
+          background: url(~@/assets/img/votingGovern/title-x.png) no-repeat left top/contain;
+        }
+      }
+
+      .right-arrow {
+        width: 19px;
+        height: 18px;
+        margin-left: 10px;
+        transform: rotateZ(180deg);
+        background: url(@/assets/img/votingGovern/title-arraw.png) no-repeat left top/contain;
+      }
+    }
+
+    .detail-text {
+      margin-bottom: 14px;
+      line-height: 24px;
+      letter-spacing: 0.1em;
+      font-size: 14px;
+      color: #dbdcf2;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      span {
+        color: #2ebc84;
+      }
+    }
+  }
+
+  .detail {
+    margin-top: 20px;
+
+    background: url(@/assets/img/votingGovern/project-top-left.png) no-repeat left top/345px,
+      url(@/assets/img/votingGovern/project-top-right.png) no-repeat right top/16px,
+      url(@/assets/img/votingGovern/project-bottom-left.png) no-repeat left bottom/35px,
+      url(@/assets/img/votingGovern/project-bottom-right.png) no-repeat right bottom/345px;
+
+    .sub-title {
+      display: flex;
+      align-items: center;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      line-height: 24px;
+      font-size: 16px;
+      color: #dbdcf2;
+
+      span {
+        width: 18px;
+        height: 17px;
+        margin-right: 5px;
+        background: url(@/assets/img/votingGovern/sub-title-bg.png) no-repeat left top/contain;
+      }
+    }
+  }
+}

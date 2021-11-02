@@ -1,0 +1,138 @@
+.modal-wrapper {
+  transform: translateZ(0);
+}
+
+.wrapper {
+  padding: 32px 16px;
+  text-align: left;
+  background-color: #fff;
+  overflow: hidden;
+
+  .title {
+    margin-bottom: 8px;
+
+    h3 {
+      margin-bottom: 0;
+      line-height: 28px;
+      font-weight: bold;
+      font-size: 20px;
+      color: #3d3d56;
+    }
+
+    :global {
+      .iconfont {
+        font-size: 20px;
+        color: #9ea1c0;
+      }
+    }
+  }
+
+  .invite {
+    margin-bottom: 16px;
+
+    :global {
+      .am-checkbox-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .am-checkbox {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+      }
+
+      .am-checkbox-inner {
+        width: 14px;
+        height: 14px;
+
+        &::after {
+          //content: ' ';
+          width: 5px;
+          height: 8px;
+          top: 1px;
+          right: 3px;
+        }
+      }
+    }
+  }
+
+  .mobile {
+    margin-bottom: 16px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #3d3d56;
+  }
+
+  .item {
+    &.submit {
+      margin-top: 10px;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 2px;
+      line-height: 22px;
+      font-size: 14px;
+      color: #3d3d56;
+    }
+
+    .get {
+      font-size: 14px;
+      color: #df384e;
+
+      &.loading {
+        color: #9ea1c0;
+      }
+    }
+
+    :global {
+      .am-input-item.am-list-item {
+        padding-left: 12px;
+        border: 1px solid #ced1e4;
+        border-radius: 2px;
+        caret-color: #3d3d56;
+
+        .am-input-clear {
+          width: 18px;
+          height: 18px;
+          background: #fff url(~@/assets/img/redPacket/close-circle.png) no-repeat center/18px;
+        }
+
+        .am-input-extra {
+          margin-left: 8px;
+        }
+
+        input {
+          color: #3d3d56;
+
+          &::-webkit-input-placeholder {
+            color: #9ea1c0;
+          }
+          &::-moz-placeholder {
+            color: #9ea1c0;
+          }
+          &:-ms-input-placeholder {
+            color: #9ea1c0;
+          }
+        }
+      }
+
+      .am-button-primary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #df384e;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .error {
+    height: 22px;
+    margin-bottom: 0;
+    line-height: 22px;
+    font-size: 14px;
+    color: #df384e;
+  }
+}

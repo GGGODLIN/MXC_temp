@@ -1,0 +1,324 @@
+.wrapper {
+  padding-bottom: 35px;
+  background-color: #fff;
+}
+
+.my {
+  line-height: 22px;
+  font-size: 14px;
+  color: #2ebc84;
+}
+
+.top {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  height: 267px;
+  background: url(@/assets/img/votingRecharge/top-bg.png) no-repeat center top/contain;
+
+  .title {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 9px;
+    line-height: 54px;
+    font-weight: bolder;
+    font-size: 50px;
+
+    &.en {
+      font-weight: normal;
+      font-size: 26px;
+      color: #fff;
+    }
+
+    span {
+      margin-right: 10px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(90deg, #ffffff 47.48%, rgba(255, 255, 255, 0) 122.88%);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    :global {
+      .mr0 {
+        margin-right: 0;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: -13px;
+      width: 10px;
+      height: 10px;
+      border: 3px solid #ffffff;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      right: -13px;
+      width: 10px;
+      height: 10px;
+      border: 3px solid #ffffff;
+      border-top: none;
+      border-left: none;
+    }
+  }
+
+  .desc-text {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 32px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .side {
+    position: absolute;
+    top: 13px;
+    right: 0;
+
+    .side-button {
+      height: 20px;
+      margin-bottom: 16px;
+      line-height: 20px;
+      padding: 0 10px;
+      font-size: 12px;
+      color: #fff;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      background-color: #2ebc84;
+    }
+  }
+}
+
+.content {
+  padding: 15px;
+}
+
+.phase {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  line-height: 28px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #3d3d56;
+
+  span {
+    width: 26px;
+    height: 10px;
+    margin-left: 8px;
+    background: url(@/assets/img/votingRecharge/phase-arrow.png) no-repeat center/contain;
+  }
+}
+
+.rule {
+  margin-bottom: 0;
+  line-height: 22px;
+  font-size: 14px;
+  color: #75799e;
+}
+
+.note {
+  margin-bottom: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #2ebc84;
+}
+
+.coin-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .coin {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding: 5px 0 13px;
+
+    .icon {
+      width: 26px;
+      height: 26px;
+      margin-right: 4px;
+      background: url(@/assets/img/votingRecharge/coin-left.png) no-repeat center/contain;
+    }
+
+    .name {
+      margin-bottom: 0;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #3d3d56;
+    }
+
+    .thum {
+      margin-bottom: 0;
+      white-space: nowrap;
+      font-size: 12px;
+      line-height: 14px;
+      color: #75799e;
+    }
+  }
+
+  .coin-right {
+    .icon {
+      width: 26px;
+      height: 26px;
+      margin-right: 4px;
+      background: url(@/assets/img/votingRecharge/coin-right.png) no-repeat center/contain;
+    }
+  }
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 24px;
+  margin-bottom: 23px;
+
+  .left {
+    position: relative;
+    width: 50%;
+    min-width: 70px;
+    height: 24px;
+    padding-left: 12px;
+    padding-right: 3px;
+    border-radius: 100px 0 0 100px;
+    transition: width 0.5s ease-out;
+    background: linear-gradient(270deg, transparent 45px, #ff716a 45px);
+
+    .progress-bar {
+      height: 24px;
+      border-radius: 4px;
+      transform: skew(25deg);
+      background: linear-gradient(270deg, #ff433a 2.56%, #ff716a 102.93%);
+      box-shadow: 0 4px 22px rgba(255, 113, 106, 0.3);
+    }
+
+    .num {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+    }
+
+    .pk {
+      position: absolute;
+      top: 1px;
+      right: -11px;
+      width: 22px;
+      height: 22px;
+      background: url(@/assets/img/votingRecharge/pk.png) no-repeat center/contain;
+      z-index: 2;
+    }
+  }
+
+  .right {
+    flex-grow: 1;
+    position: relative;
+    min-width: 70px;
+    height: 24px;
+    padding-left: 3px;
+    padding-right: 12px;
+    border-radius: 0 100px 100px 0;
+    transition: width 0.5s ease-out;
+    background: linear-gradient(270deg, #12c9fe 80%, transparent 80%);
+
+    .progress-bar {
+      height: 24px;
+      border-radius: 4px;
+      transform: skew(25deg);
+      background: linear-gradient(270deg, #12c9fe 7.65%, #5295ea 108.68%);
+      box-shadow: 0 4px 22px rgba(18, 201, 254, 0.3);
+    }
+
+    .num {
+      position: absolute;
+      top: 0;
+      left: 25px;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+    }
+  }
+}
+
+.coin-info {
+  .coin-item {
+    position: relative;
+    padding: 12px;
+    margin-bottom: 22px;
+    background-color: #f8f9fc;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .name {
+      margin-right: 4px;
+      margin-bottom: 0;
+      line-height: 14px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #3d3d56;
+    }
+
+    .thum {
+      margin-bottom: 0;
+      line-height: 12px;
+      font-size: 12px;
+      color: #9ea1c0;
+    }
+  }
+
+  .desc {
+    margin-bottom: 24px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #75799e;
+  }
+
+  .recharge {
+    :global {
+      .am-button {
+        height: 42px;
+        border: 1px solid #2ebc84 !important;
+        border-radius: 2px;
+
+        span {
+          color: #2ebc84;
+        }
+      }
+
+      .am-button-disabled {
+        border-color: #dbdcf2 !important;
+
+        span {
+          color: #dbdcf2;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.content {
+  width: 314px;
+
+  :global {
+    .am-modal-content {
+      padding: 0;
+      background-color: #3f414e;
+
+      .am-modal-body {
+        padding: 0;
+      }
+    }
+  }
+
+  .head {
+    width: 314px;
+    height: 112px;
+    margin-bottom: 25px;
+    background: url(@/assets/img/voting/success_modal_head.png) no-repeat;
+    background-size: contain;
+  }
+
+  p {
+    padding: 0 15px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+
+    span {
+      color: #00d38b;
+    }
+  }
+
+  a {
+    color: #00d38b;
+  }
+
+  .handle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 25px;
+    border-top: 1px solid #62636e;
+    margin-top: 25px;
+    font-size: 16px;
+
+    span {
+      padding: 10px;
+      margin-right: 10px;
+      color: #fff;
+    }
+  }
+}

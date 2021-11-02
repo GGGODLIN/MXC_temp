@@ -1,0 +1,235 @@
+.rebateContent {
+  width: 345px;
+  margin: auto;
+
+  .rebateHeader {
+    width: 100%;
+    padding: 8px 11px;
+    margin-top: 17px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--main-text-1);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background-color-3);
+
+    &.en {
+      .rebateHeaderItem {
+        width: 40%;
+
+        &:first-child {
+          width: 35%;
+        }
+
+        &:last-child {
+          width: 25%;
+        }
+      }
+    }
+  }
+
+  .rebateHeaderItem {
+    flex-shrink: 0;
+    width: 30%;
+
+    > div {
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+
+    &:first-child {
+      width: 45%;
+    }
+
+    &:last-child {
+      width: 25%;
+      text-align: right;
+    }
+  }
+
+  .rebateHeaderTitle {
+    display: block;
+    margin-bottom: 4px;
+    line-height: 16px;
+    color: var(--main-text-2);
+  }
+
+  .rebateHeaderValue {
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--main-text-1);
+  }
+
+  .rebateHeaderTip {
+    margin-top: 8px;
+    margin-bottom: 28px;
+    font-size: 12px;
+    color: var(--main-text-2);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .rebateHeaderRecord {
+    display: flex;
+    align-items: center;
+    color: var(--up-color);
+
+    :global {
+      .iconfont {
+        margin-right: 2px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .rebatebtn {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: PingFangSC;
+    font-weight: 400;
+
+    :global {
+      .am-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        height: 40px;
+        border-radius: 2px;
+
+        span {
+          line-height: 18px;
+          white-space: normal;
+          font-weight: bold;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .shareBtn {
+      background: #fff;
+      border: 1px solid var(--border-color-2);
+
+      span {
+        color: rgba(8, 190, 129, 1);
+      }
+    }
+
+    .postersBtn {
+      background: var(--up-color);
+      color: rgba(255, 255, 255, 1);
+
+      span {
+        line-height: 14px;
+      }
+    }
+
+    .faceBtn {
+      background: var(--up-color) url(@/assets/img/invite/invite-face-new.png) no-repeat top right;
+      background-size: 38px;
+    }
+  }
+}
+
+.faceModal {
+  width: 294px;
+  min-height: 469px;
+
+  :global {
+    .am-modal-content {
+      padding: 0;
+      background-color: transparent;
+    }
+
+    .am-modal-content .am-modal-body {
+      padding: 0;
+    }
+  }
+}
+
+.faceModalContent {
+  width: 294px;
+  min-height: 394px;
+  padding-bottom: 20px;
+  padding-top: 48px;
+  border-radius: 8px;
+  background: transparent url(@/assets/img/invite/invite-face-modal.png) no-repeat center/contain;
+}
+
+.faceModalTitle {
+  padding: 0 15px;
+  margin-bottom: 11px;
+  line-height: 38px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.faceModalTitleTip {
+  margin-bottom: 34px;
+  line-height: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+
+.faceModalQrcode {
+  width: 155px;
+  height: 155px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.faceModalClose {
+  position: relative;
+  width: 30px;
+  height: 75px;
+  margin: 0 auto;
+  background: url(@/assets/img/invite/invite-face-modal-close.png) no-repeat center/contain;
+}
+
+.faceModalCloseBtn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.modalContent {
+  height: 415px;
+}
+
+//   modal
+.footmodal {
+  width: 345px;
+  margin: auto;
+  display: flex;
+  height: 54px;
+  line-height: 54px;
+  border-bottom: 1px solid var(--divider-color);
+  font-size: 14px;
+  div {
+    flex: 1;
+  }
+  div:nth-of-type(1) {
+    text-align: left;
+    color: rgba(255, 251, 251, 1);
+  }
+  div:nth-of-type(2) {
+    text-align: right;
+  }
+}
+.icontishi {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding-left: 10px;
+  line-height: 18px;
+  color: var(--main-text-2);
+}

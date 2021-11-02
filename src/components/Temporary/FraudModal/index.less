@@ -1,0 +1,121 @@
+.wrapper {
+  width: 314px;
+  height: 420px;
+  background-color: #0d202d;
+  background-image: url(@/assets/img/temporary/fraud-modal-bg.png);
+  background-repeat: no-repeat;
+  background-position: center 145px;
+  background-size: 233px 193px;
+
+  :global {
+    .am-modal-content {
+      position: relative;
+      padding: 23px 19px;
+      border-radius: 0;
+      background-color: transparent;
+    }
+
+    .am-modal-body {
+      padding: 0 !important;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 12px;
+  line-height: 28px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+}
+
+.content {
+  text-align: left;
+}
+
+.text {
+  margin-bottom: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+
+  span {
+    color: #d38a1b;
+  }
+}
+
+.handle {
+  position: absolute;
+  left: 0;
+  bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 18px;
+}
+
+.confirm {
+  width: 135px;
+  height: 40px;
+  border-radius: 2px;
+}
+
+.handle {
+  .link {
+    width: 135px;
+    height: 40px;
+    border-radius: 2px;
+    border-color: #ffc652 !important;
+    color: #fff;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+
+  span {
+    color: #fff;
+  }
+
+  :global {
+    .am-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+    }
+
+    .am-checkbox {
+      width: 12px;
+      height: 12px;
+      margin-right: 5px;
+    }
+
+    .am-checkbox-input {
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+    }
+
+    .am-checkbox-inner {
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+
+      &::after {
+        top: 1px;
+        left: 4px;
+        width: 3px;
+        height: 8px;
+      }
+    }
+  }
+}

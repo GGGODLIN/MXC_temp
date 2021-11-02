@@ -1,0 +1,129 @@
+@duration: 2s;
+
+.wrapper {
+  display: inline-flex;
+  position: relative;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.bg {
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: -5px;
+  bottom: -5px;
+  padding-left: 5px;
+  transition: all 0.3s;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 12px;
+}
+
+.fontUp {
+  animation: font-up-animate @duration linear;
+}
+
+.fontDown {
+  animation: font-down-animate @duration linear;
+}
+
+.bgUp {
+  animation: bg-up-animate 2s linear;
+}
+
+.bgDown {
+  animation: bg-down-animate 2s linear;
+}
+
+.iconUp {
+  animation: icon-up-animate @duration forwards linear;
+}
+
+.iconDown {
+  animation: icon-down-animate @duration forwards linear;
+}
+
+.pos {
+  color: var(--up-color);
+}
+
+.neg {
+  color: var(--down-color);
+}
+
+@keyframes font-up-animate {
+  10%,
+  90% {
+    color: var(--up-color);
+  }
+}
+
+@keyframes font-down-animate {
+  10%,
+  90% {
+    color: var(--down-color);
+  }
+}
+
+@keyframes bg-up-animate {
+  10%,
+  90% {
+    background-color: var(--up-label-bg);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes bg-down-animate {
+  10%,
+  90% {
+    background-color: var(--down-label-bg);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes icon-up-animate {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  10%,
+  95% {
+    opacity: 1;
+    transform: translateY(0);
+    color: var(--up-color);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes icon-down-animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10%,
+  95% {
+    opacity: 1;
+    transform: translateY(0);
+    color: var(--down-color);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

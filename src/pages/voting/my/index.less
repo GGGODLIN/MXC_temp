@@ -1,0 +1,48 @@
+.wrapper {
+  height: 100vh;
+  padding-top: 44px;
+  color: #fff;
+  background-color: #091e19;
+
+  &.app {
+    padding-top: 0;
+  }
+
+  .list {
+    height: 100%;
+    padding-top: 10px;
+    overflow-y: auto;
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 15px;
+      border-bottom: 1px solid #00110d;
+
+      &:first-child {
+        border-top: 1px solid #00110d;
+      }
+
+      p {
+        margin-bottom: 0;
+        line-height: 22px;
+        text-align: left;
+        font-size: 12px;
+        color: #fff;
+
+        span {
+          display: block;
+
+          b {
+            font-weight: normal;
+          }
+        }
+
+        .key {
+          color: #96979c;
+        }
+      }
+    }
+  }
+}

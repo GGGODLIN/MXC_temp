@@ -1,0 +1,127 @@
+.pushOrderHerder {
+  margin: auto;
+  color: rgba(150, 151, 156, 1);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+
+  div {
+    position: relative;
+    color: var(--main-text-2);
+  }
+
+  div:nth-of-type(2) {
+    margin-left: 32px;
+  }
+
+  .tabActive {
+    color: var(--main-text-1);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -5px;
+      right: 0;
+      width: 36px;
+      height: 2px;
+      background-color: var(--up-color);
+    }
+  }
+}
+
+.pushOrderContent {
+  width: 100%;
+  margin: auto;
+
+  :global {
+    .am-tabs-default-bar-content {
+      display: none;
+    }
+  }
+
+  .pushList {
+    margin: 12px auto;
+    width: 345px;
+    height: 153px;
+    background: var(--background-color-3);
+    border-radius: 4px;
+    padding: 0 10px 0 10px;
+
+    .listTop {
+      width: 100%;
+      margin: auto;
+      padding-top: 15px;
+      display: flex;
+
+      div {
+        flex: 1;
+      }
+
+      div:nth-of-type(2) {
+        text-align: right;
+        font-size: 14px;
+        color: rgba(150, 151, 156, 1);
+      }
+
+      .typeBtn {
+        .cancellations {
+          width: 47px;
+          height: 21px;
+          text-align: center;
+          background: rgba(50, 52, 62, 1);
+          border-radius: 2px;
+          display: inline-block;
+        }
+      }
+    }
+
+    .orderProcess {
+      height: 2px;
+      width: 100%;
+      position: relative;
+      border-radius: 1px;
+      background-color: var(--background-color-3);
+      margin: 10px auto;
+
+      .orderProcessBar {
+        height: 2px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(90deg, rgba(0, 211, 139, 1) 0%, rgba(69, 223, 171, 0.75) 100%);
+        border-radius: 1px;
+      }
+    }
+
+    .listpice {
+      width: 100%;
+      display: flex;
+      font-size: 12px;
+      font-weight: 400;
+      text-align: left;
+      margin: 8px auto;
+
+      p {
+        color: rgba(98, 99, 110, 1);
+        margin-bottom: 0;
+      }
+
+      div {
+        flex: 1;
+      }
+
+      div:nth-of-type(2) {
+        text-align: center;
+      }
+
+      div:nth-of-type(3) {
+        text-align: right;
+      }
+    }
+  }
+}
+.contentList {
+  margin-top: 46px;
+}

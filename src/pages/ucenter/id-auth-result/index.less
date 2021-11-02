@@ -1,0 +1,99 @@
+.wrapper {
+  min-height: calc(100vh - 44px);
+  padding: 12px 15px;
+  background-color: var(--background-color-3);
+}
+
+.item {
+  padding: 18px 16px 12px;
+  margin-bottom: 16px;
+  border-radius: 2px;
+  background-color: var(--background-color-4);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  margin-bottom: 0;
+  line-height: 22px;
+  font-size: 14px;
+  color: var(--main-text-1);
+}
+
+a.button {
+  border-color: var(--up-color) !important;
+
+  span {
+    color: var(--up-color) !important;
+  }
+
+  &[aria-disabled='true'] {
+    border-color: var(--border-color-2) !important;
+
+    span {
+      color: var(--main-text-3) !important;
+    }
+  }
+}
+
+.desc {
+  padding-top: 12px;
+  margin-bottom: 0;
+  border-top: 1px dashed var(--divider-color);
+  line-height: 20px;
+  font-size: 12px;
+  color: var(--main-text-1);
+}
+
+.successTag {
+  margin-bottom: 0;
+  line-height: 22px;
+  font-size: 14px;
+  color: var(--up-color);
+
+  :global {
+    .iconfont {
+      margin-right: 5px;
+    }
+  }
+}
+
+.rejectReason {
+  margin-top: -12px;
+  margin-bottom: 4px;
+  line-height: 20px;
+  font-size: 12px;
+  color: var(--down-color);
+
+  :global {
+    .iconfont {
+      margin-right: 3px;
+      font-size: 12px;
+    }
+  }
+}
+
+.successInfo {
+  padding-top: 8px;
+  border-top: 1px dashed var(--divider-color);
+
+  p {
+    margin-bottom: 8px;
+    line-height: 22px;
+    font-size: 14px;
+    color: var(--main-text-1);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

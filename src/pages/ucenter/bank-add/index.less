@@ -1,0 +1,68 @@
+.bankAddContent {
+  width: 345px;
+  height: auto;
+  margin: 45px auto;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .listInterval {
+    margin-top: 24px;
+
+    .bankInputTitle {
+      height: 17px;
+      font-size: 12px;
+      font-family: PingFangSC;
+      font-weight: 400;
+      color: rgba(173, 173, 173, 1);
+    }
+
+    .inputList {
+      margin-top: 8px;
+    }
+    .selectVal {
+      height: 42px;
+      border: 1px solid #297673;
+      margin-top: 8px;
+      border-radius: 4px;
+      :global {
+        .am-list-extra {
+          text-align: left;
+          flex-basis: 93%;
+        }
+      }
+    }
+  }
+
+  .bankPrompt {
+    margin-top: 24px;
+    font-size: 12px;
+    font-family: SFProDisplay;
+    font-weight: 400;
+    position: relative;
+    color: rgba(83, 83, 91, 1);
+
+    div {
+      display: inline-block;
+    }
+
+    div:nth-of-type(1) {
+      position: absolute;
+      top: 0;
+    }
+
+    div:nth-of-type(2) {
+      margin-left: 25px;
+    }
+  }
+
+  .fromSubmit {
+    margin-top: 78px;
+  }
+}
+@import '~@/mixins.less';
+
+.item {
+  margin: 20px 0;
+}

@@ -1,0 +1,262 @@
+.wrapper {
+}
+
+.header {
+  position: relative;
+  height: 280px;
+  padding-top: 18px;
+  background: linear-gradient(275.87deg, #151a17 5.58%, #202623 100%), #c4c4c4;
+  overflow: hidden;
+}
+
+.headerTitle {
+  line-height: 44px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  color: #e9d7bf;
+}
+
+.headerRound1 {
+  position: absolute;
+  right: 3px;
+  bottom: 33px;
+  width: 162px;
+  height: 162px;
+  border-radius: 100%;
+  background: radial-gradient(66.36% 66.36% at 50% 38.18%, #12cb82 0.9%, rgba(46, 188, 132, 0) 100%);
+  opacity: 0.8;
+}
+
+.headerRound2 {
+  position: absolute;
+  left: -26px;
+  bottom: -89px;
+  width: 219px;
+  height: 219px;
+  border-radius: 100%;
+  background: radial-gradient(55.97% 55.97% at 79.26% 33.38%, #f5ffe0 0%, rgba(115, 95, 74, 0.28) 100%);
+  opacity: 0.2;
+}
+
+.vipCard {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 333px;
+  height: 175px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%),
+    url(@/assets/img/info/vip-card.png) no-repeat center/contain;
+  border: 1px solid rgba(255, 255, 255, 0.27);
+  filter: drop-shadow(0px 4px 30px rgba(28, 39, 34, 0.2));
+  backdrop-filter: blur(30px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 12px;
+}
+
+.vipCardDomain {
+  position: absolute;
+  right: 16px;
+  bottom: 38px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.2;
+}
+
+.content {
+  margin-top: -32px;
+}
+
+.contentTabs {
+  position: relative;
+  height: 36px;
+}
+
+.contentTabPane {
+  position: absolute;
+  top: 0;
+  width: 197px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #585448;
+}
+
+.contentTabPaneGold {
+  left: 0;
+  background: url(@/assets/img/info/vip-gold-tab.png) no-repeat center/contain;
+
+  &.active {
+    font-size: 16px;
+    color: #b4a58d;
+    background: url(@/assets/img/info/vip-gold-tab-active.png) no-repeat center/contain;
+    z-index: 1;
+  }
+}
+
+.contentTabPanePlatinum {
+  right: 0;
+  background: url(@/assets/img/info/vip-platinum-tab.png) no-repeat center/contain;
+
+  &.active {
+    font-size: 16px;
+    color: #b4a58d;
+    background: url(@/assets/img/info/vip-platinum-tab-active.png) no-repeat center/contain;
+    z-index: 1;
+  }
+}
+
+.contentItem {
+  padding: 18px 16px 36px;
+  background-color: #1a2120;
+}
+
+.commonItem {
+  margin-bottom: 12px;
+  border: 1px solid #393e3e;
+  border-radius: 8px;
+  background-color: #242929;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 14px 10px;
+}
+
+.contactQrcode {
+  margin-right: 10px;
+
+  img {
+    display: block;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.contactDesc {
+  display: flex;
+  margin-bottom: 6px;
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #b4a58d;
+
+  span {
+    flex-shrink: 0;
+    width: 4px;
+    height: 4px;
+    margin-top: 8px;
+    margin-right: 6px;
+    border-radius: 100%;
+    background-color: #b4a58d;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contactAccount {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 0;
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--up-color);
+
+  span {
+    margin-left: 3px;
+  }
+
+  :global {
+    .iconfont {
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+}
+
+.equityTitle {
+  padding: 8px 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #393e3e;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #b4a58d;
+}
+
+.equityContent {
+  padding-top: 23px;
+  margin-bottom: -7px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.equityContentTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #b4a58d;
+
+  span {
+    width: 70px;
+    height: 1px;
+  }
+}
+
+.equityContentLineLeft {
+  margin-right: 8px;
+  background: linear-gradient(270deg, #807a70 0%, rgba(27, 27, 27, 0) 100%);
+}
+
+.equityContentLineRight {
+  margin-left: 8px;
+  background: linear-gradient(90deg, #807a70 0%, rgba(27, 27, 27, 0) 100%);
+}
+
+.equityList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.equityItem {
+  width: 92px;
+  padding: 0 5px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.equityItemImg {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 12px;
+}
+
+.equityItemText {
+  margin-bottom: 0;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #b4a58d;
+}

@@ -1,0 +1,214 @@
+.wrapper {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 68px 0 0;
+  background: #f2f5fa url(@/assets/img/redPacket/result-top-bg.png) no-repeat top center/375px;
+
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    margin-bottom: 0;
+    line-height: 44px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .content {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 343px;
+    height: 100%;
+    padding: 32px 16px 90px;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+    //overflow: hidden;
+  }
+
+  .result {
+    padding-bottom: 32px;
+    border-bottom: 1px dashed #ced1e4;
+
+    .sender {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px;
+      line-height: 24px;
+      font-size: 16px;
+      color: #3d3d56;
+
+      span {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+        line-height: 15px;
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+        background-color: #c5984c;
+      }
+    }
+
+    .cost {
+      margin-bottom: 0;
+      line-height: 54px;
+      text-align: center;
+      word-break: break-all;
+      font-size: 46px;
+      color: #c5984c;
+      overflow: hidden;
+
+      span {
+        line-height: 22px;
+        font-size: 14px;
+      }
+    }
+
+    .cny {
+      line-height: 24px;
+      text-align: center;
+      font-size: 16px;
+      color: #9ea1c0;
+    }
+  }
+
+  .other {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 0;
+    padding: 32px 0 0;
+    overflow: hidden;
+
+    .num {
+      margin-bottom: 15px;
+      line-height: 22px;
+      font-size: 14px;
+      color: #75799e;
+    }
+
+    .list {
+      padding: 0;
+      margin-bottom: 0;
+      overflow: auto;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      //align-items: center;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #f4f5f7;
+
+      &:last-child {
+        margin-bottom: 0;
+        border-color: transparent;
+      }
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .avatar {
+        width: 33px;
+        height: 33px;
+        margin-right: 8px;
+        border-radius: 50%;
+
+        &.avatar0 {
+          background: url(@/assets/img/redPacket/avatar0.png) no-repeat;
+          background-size: contain;
+        }
+        &.avatar1 {
+          background: url(@/assets/img/redPacket/avatar1.png) no-repeat;
+          background-size: contain;
+        }
+        &.avatar2 {
+          background: url(@/assets/img/redPacket/avatar2.png) no-repeat;
+          background-size: contain;
+        }
+        &.avatar3 {
+          background: url(@/assets/img/redPacket/avatar3.png) no-repeat;
+          background-size: contain;
+        }
+        &.avatar4 {
+          background: url(@/assets/img/redPacket/avatar4.png) no-repeat;
+          background-size: contain;
+        }
+        &.avatar5 {
+          background: url(@/assets/img/redPacket/avatar5.png) no-repeat;
+          background-size: contain;
+        }
+        &.avatar6 {
+          background: url(@/assets/img/redPacket/avatar6.png) no-repeat;
+          background-size: contain;
+        }
+        &.avatar7 {
+          background: url(@/assets/img/redPacket/avatar7.png) no-repeat;
+          background-size: contain;
+        }
+        &.avatar8 {
+          background: url(@/assets/img/redPacket/avatar8.png) no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .user {
+        margin-bottom: 0;
+        line-height: 22px;
+        font-size: 14px;
+        color: #3d3d56;
+      }
+
+      .time {
+        margin-bottom: 0;
+        line-height: 20px;
+        font-size: 12px;
+        color: #9ea1c0;
+      }
+    }
+
+    .right {
+      .cost {
+        margin-bottom: 0;
+        line-height: 22px;
+        font-size: 14px;
+        color: #3d3d56;
+      }
+
+      .cny {
+        margin-bottom: 0;
+        line-height: 20px;
+        font-size: 12px;
+        color: #9ea1c0;
+      }
+    }
+  }
+
+  .download {
+    position: absolute;
+    left: 0;
+    bottom: 34px;
+    width: 100%;
+
+    :global {
+      .am-button-primary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 192px;
+        margin: 0 auto;
+        background-color: #df384e;
+        border-radius: 2px;
+      }
+    }
+  }
+}

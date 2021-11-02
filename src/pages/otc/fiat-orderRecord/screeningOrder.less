@@ -1,0 +1,122 @@
+.modelContent {
+  padding: 0px 15px;
+  .headerTop {
+    display: flex;
+    margin-top: 42px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--divider-color);
+    div {
+      flex: 1;
+    }
+    div:nth-of-type(1) {
+      font-size: 16px;
+      font-weight: 550;
+      text-align: left;
+    }
+    div:nth-of-type(2) {
+      text-align: right;
+    }
+    .headerColor {
+      color: var(--main-text-1);
+    }
+  }
+  .OrderType {
+    margin-top: 15px;
+    .title {
+      font-size: 12px;
+      font-weight: 550;
+      color: var(--main-text-1);
+      text-align: left;
+    }
+    .typeContent {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
+      div {
+        //  flex: 1;
+        display: inline-block;
+        // padding: 7px 36px;
+        height: 32px;
+        line-height: 32px;
+        background: var(--background-color-3);
+        color: var(--main-text-2);
+        border-radius: 4px;
+        font-size: 12px;
+      }
+      div:nth-of-type(1) {
+        // float: left;
+      }
+      div:nth-of-type(2) {
+        // float: right;
+      }
+    }
+  }
+  .orderTypeActive {
+    background: var(--background-color-4) !important;
+    color: var(--up-color);
+    border: 1px solid var(--up-color);
+  }
+  .OrderState {
+    clear: both;
+    padding-top: 24px;
+    .title {
+      font-size: 12px;
+      font-weight: 550;
+      color: var(--main-text-1);
+      text-align: left;
+    }
+    .typeContent {
+      margin-top: 12px;
+      div {
+        display: inline-block;
+        width: 110px;
+        height: 32px;
+        line-height: 32px;
+        background: var(--background-color-3);
+        color: var(--main-text-2);
+        border-radius: 4px;
+        font-size: 12px;
+      }
+      div:nth-of-type(1) {
+        float: left;
+      }
+      div:nth-of-type(2) {
+        float: right;
+      }
+      div:nth-of-type(3) {
+        float: left;
+        margin-top: 12px;
+      }
+      div:nth-of-type(4) {
+        float: right;
+        margin-top: 12px;
+      }
+    }
+  }
+  .footerBtn {
+    position: absolute;
+    bottom: 54px;
+    width: 100%;
+    font-size: 12px;
+
+    div:nth-of-type(1) {
+      padding: 10px 32px;
+      background: #fefdff;
+      display: inline-block;
+      border-radius: 4px;
+      border: 1px solid rgba(225, 228, 234, 1);
+      float: left;
+    }
+    div:nth-of-type(2) {
+      padding: 10px 32px;
+      background: #00d38b;
+      display: inline-block;
+      border-radius: 4px;
+      color: #fff;
+    }
+  }
+}
+.disable {
+  pointer-events: none;
+}

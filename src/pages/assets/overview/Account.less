@@ -1,0 +1,15 @@
+@import '~@/mixins.less';
+
+.tabs {
+  .flex-left-center;
+  line-height: 36px;
+  div {
+    flex: 1;
+    text-align: center;
+    color: var(--main-text-1);
+  }
+  .active {
+    color: var(--up-color);
+    border-bottom: 1px solid var(--up-color);
+  }
+}

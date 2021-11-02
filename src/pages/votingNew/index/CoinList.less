@@ -1,0 +1,157 @@
+.wrapper {
+  background-color: #fff;
+}
+
+.content {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 0;
+
+    h3 {
+      margin-bottom: 0;
+      line-height: 24px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #3d3d56;
+    }
+
+    .search {
+      width: 150px;
+
+      :global {
+        .am-search-input {
+          height: 24px;
+          min-height: 24px;
+          padding-left: 7px;
+          border-color: #e5e8f8;
+
+          .am-input-label {
+            width: 12px;
+          }
+
+          .iconfont {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .list {
+    padding-bottom: 32px;
+
+    .item {
+      height: 116px;
+      padding: 16px;
+      margin-bottom: 16px;
+      border-radius: 2px;
+      background-color: #f8f9fc;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .item-top {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e5e8f8;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .raking {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #9ea1c0;
+      }
+
+      .raking1 {
+        background: url(@/assets/img/votingNew/raking1.png) no-repeat center/contain;
+      }
+
+      .raking2 {
+        background: url(@/assets/img/votingNew/raking2.png) no-repeat center/contain;
+      }
+
+      .raking3 {
+        background: url(@/assets/img/votingNew/raking3.png) no-repeat center/contain;
+      }
+
+      .name {
+        margin-right: 4px;
+        margin-bottom: 0;
+        line-height: 30px;
+        font-size: 18px;
+        color: #3d3d56;
+      }
+
+      .fullName {
+        margin-bottom: 0;
+        line-height: 20px;
+        font-size: 12px;
+        color: #9ea1c0;
+      }
+    }
+
+    .right {
+      .num {
+        margin-bottom: 0;
+        line-height: 20px;
+        text-align: right;
+        font-size: 12px;
+        color: #75799e;
+
+        b {
+          line-height: 30px;
+          font-size: 18px;
+          color: #3d3d56;
+        }
+      }
+    }
+
+    .handle {
+      padding-top: 12px;
+      text-align: right;
+
+      :global {
+        .am-button {
+          height: 30px;
+          margin-right: 8px;
+          line-height: 30px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+
+        .am-button-ghost {
+          border-color: var(--up-color) !important;
+          color: var(--up-color) !important;
+
+          span {
+            color: var(--up-color);
+          }
+        }
+      }
+    }
+  }
+}

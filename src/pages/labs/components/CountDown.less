@@ -1,0 +1,41 @@
+@import '~@/mixins.less';
+
+.countdown {
+  width: 180px;
+
+  b {
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--main-text-1);
+    margin-left: 8px;
+  }
+
+  div,
+  p {
+    width: 100%;
+    .flex-between-center();
+  }
+
+  p span {
+    font-size: 12px;
+    color: var(--main-text-1);
+    flex: 1;
+    text-align: center;
+  }
+
+  div {
+    span {
+      font-size: 24px;
+      flex: 1;
+      text-align: center;
+      color: var(--main-text-1);
+    }
+
+    i {
+      display: block;
+      width: 1px;
+      background: var(--background-color-3);
+      height: 15px;
+    }
+  }
+}

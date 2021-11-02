@@ -1,0 +1,59 @@
+@import '~@/mixins.less';
+.list {
+  padding: 0 20px;
+}
+.item {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--divider-color);
+
+  p {
+    margin: 0;
+  }
+
+  label {
+    font-size: 12px;
+    color: var(--main-text-2);
+  }
+}
+
+.icon {
+  width: 40px;
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+}
+
+.frozen,
+.balance {
+  flex: 1;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: bold;
+  width: 25%;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+
+  span:nth-of-type(1) {
+    width: 25%;
+  }
+  span:nth-of-type(2) {
+    flex: 1;
+  }
+  span:nth-of-type(3) {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+.balance {
+  text-align: right;
+}

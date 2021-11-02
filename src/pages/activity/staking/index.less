@@ -1,0 +1,343 @@
+.wrapper {
+  min-height: calc(100vh - 43px);
+  padding: 20px 0;
+  background-color: #1f1d38;
+}
+
+.header {
+  padding: 15px 20px 0;
+  margin-bottom: 20px;
+  background: url(@/assets/img/activity/staking/header-bg.png) no-repeat top right;
+  background-size: 300px 178px;
+
+  .title {
+    width: 120px;
+    margin-bottom: 17px;
+    line-height: 38px;
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+
+    &.en {
+      width: 150px;
+    }
+  }
+
+  .tip {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #fff;
+
+    a {
+      text-align: right;
+      color: var(--up-color);
+    }
+  }
+
+  .rule {
+    line-height: 20px;
+    font-size: 12px;
+    color: #d0d5ff;
+
+    .rule-title {
+      margin-bottom: 4px;
+      line-height: 22px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .rule-text {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 23px;
+  margin: 0 15px 20px;
+  border-radius: 10px;
+  background-color: #37345c;
+
+  .balance-item {
+    flex: 1;
+    line-height: 28px;
+    font-size: 14px;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  .balance-key {
+    margin-bottom: 0;
+    color: #8c90bc;
+  }
+
+  .balance-value {
+    margin-bottom: 0;
+    color: #d0d5ff;
+  }
+}
+
+.content {
+  padding: 0 15px;
+
+  .custom-tab-bar {
+    display: flex;
+    width: 100%;
+    height: 46px;
+    padding: 4px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background-color: #fff;
+
+    .custom-tab {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--main-text-1);
+
+      &.active {
+        color: #fff;
+        background-color: #19d79b;
+      }
+    }
+  }
+
+  .item {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .conversion-title {
+    margin-bottom: 14px;
+
+    h4 {
+      margin-bottom: 16px;
+      line-height: 30px;
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--main-text-1);
+    }
+  }
+
+  .input {
+    margin-bottom: 4px;
+    font-size: 16px;
+
+    .all {
+      margin-left: 10px;
+      line-height: 24px;
+      color: var(--up-color);
+    }
+
+    :global {
+      .am-input-item.am-list-item {
+        height: 32px;
+        padding-left: 12px;
+        border-radius: 2px;
+
+        .am-list-line {
+          padding-right: 12px;
+        }
+      }
+
+      .am-input-extra {
+        font-weight: 500;
+        color: var(--main-text-1);
+      }
+    }
+  }
+
+  .input-balance {
+    margin-bottom: 16px;
+    line-height: 20px;
+    font-size: 12px;
+    color: var(--main-text-2);
+
+    span {
+      margin-left: 8px;
+      margin-right: 5px;
+    }
+  }
+
+  .conversion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--main-text-2);
+
+    span {
+      margin-left: 5px;
+      color: var(--main-text-1);
+    }
+
+    .num,
+    .rate {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .handle {
+    margin-bottom: 16px;
+    :global {
+      .am-button {
+        height: 40px;
+        border-radius: 0;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .warning {
+    margin-bottom: 0;
+    line-height: 20px;
+    font-size: 12px;
+    color: var(--down-color);
+  }
+
+  .step-wrapper {
+  }
+
+  .step {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+
+    &.step1 {
+      .icon {
+        background: url(@/assets/img/activity/staking/step-icon-1.png) no-repeat center/contain;
+      }
+    }
+
+    &.step2 {
+      .icon {
+        background: url(@/assets/img/activity/staking/step-icon-2.png) no-repeat center/contain;
+      }
+    }
+
+    &.step3 {
+      margin-bottom: 0;
+
+      .icon {
+        background: url(@/assets/img/activity/staking/step-icon-3.png) no-repeat center/contain;
+      }
+    }
+
+    .top-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .circle {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        background: url(@/assets/img/activity/staking/right-circle.png) no-repeat center/contain;
+      }
+
+      :global {
+        .am-button {
+          display: flex;
+          align-items: center;
+          height: 28px;
+          padding: 0 8px;
+        }
+      }
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+      line-height: 24px;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--main-text-1);
+    }
+
+    .desc {
+      margin-bottom: 0;
+      line-height: 20px;
+      font-size: 12px;
+      color: var(--main-text-2);
+    }
+  }
+
+  .question-wrapper {
+    margin-top: 20px;
+    //padding-bottom: 15px;
+
+    .title {
+      margin-bottom: 20px;
+      line-height: 28px;
+      font-weight: 500;
+      font-size: 20px;
+      color: #dbdcf2;
+    }
+
+    .section {
+      margin-bottom: 20px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .question {
+      margin-bottom: 9px;
+      line-height: 24px;
+      font-weight: 500;
+      font-size: 16px;
+      color: #dbdcf2;
+    }
+
+    .answer {
+      margin-bottom: 9px;
+      line-height: 20px;
+      font-size: 12px;
+      color: #dbdcf2;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .question-example {
+      img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .question-example-tip {
+      margin-top: 8px;
+      text-align: center;
+      color: var(--main-text-3);
+    }
+  }
+}

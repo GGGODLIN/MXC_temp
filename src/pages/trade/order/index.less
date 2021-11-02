@@ -1,0 +1,78 @@
+.orderContainer {
+  padding: 10px;
+  background-color: var(--background-color-4);
+  border-radius: 4px;
+  margin-bottom: 5px;
+  &.sellOrderContaner {
+    .orderActionLine {
+      :global {
+        .iconfont {
+          display: inline-block;
+          transform: rotateZ(180deg);
+          color: #fc4a5b;
+        }
+      }
+    }
+    .orderProcess {
+      .orderProcessBar {
+        background: #fc4a5b;
+      }
+    }
+  }
+  .orderActionLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    :global {
+      .iconfont {
+        color: #00d38b;
+      }
+    }
+    .orderCancel {
+      padding: 0 10px;
+      height: 21px;
+      line-height: 21px;
+      text-align: center;
+      background-color: var(--background-color-3);
+      color: var(--main-text-1);
+      border-radius: 2px;
+      font-size: 14px;
+    }
+    .statusText {
+      font-size: 14px;
+      color: var(--main-text-1);
+    }
+  }
+  .orderProcess {
+    height: 2px;
+    position: relative;
+    border-radius: 1px;
+    background-color: var(--background-color-3);
+    margin: 10px 0 5px 0;
+    .orderProcessBar {
+      height: 2px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: linear-gradient(90deg, rgba(0, 211, 139, 1) 0%, rgba(69, 223, 171, 0.75) 100%);
+      border-radius: 1px;
+    }
+  }
+  .orderInfo {
+    display: flex;
+    .orderCol1 {
+      width: 40%;
+    }
+    .orderCol2 {
+      width: 30%;
+    }
+    .orderCol3 {
+      width: 30%;
+      text-align: right;
+    }
+    .orderInfoCell {
+      font-size: 12px;
+      padding: 4px 0;
+    }
+  }
+}

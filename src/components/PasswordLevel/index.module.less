@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 16px;
+  margin-top: 10px;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.passwordLevel {
+  display: flex;
+  align-items: center;
+
+  &.low {
+    .passwordLevelProgress {
+      span:first-child {
+        background-color: #ee2c5a;
+      }
+    }
+
+    .passwordLevelTip {
+      color: #ee2c5a;
+    }
+  }
+
+  &.middle {
+    .passwordLevelProgress {
+      span:nth-child(-n + 2) {
+        background-color: #faad14;
+      }
+    }
+
+    .passwordLevelTip {
+      color: #faad14;
+    }
+  }
+
+  &.high {
+    .passwordLevelProgress {
+      span {
+        background-color: var(--up-color);
+      }
+    }
+
+    .passwordLevelTip {
+      color: var(--up-color);
+    }
+  }
+}
+
+.passwordLevelProgress {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+
+  span {
+    width: 34px;
+    height: 7px;
+    border-radius: 4px;
+
+    margin-right: 5px;
+    background-color: var(--background-color-2);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

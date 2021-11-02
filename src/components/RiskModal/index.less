@@ -1,0 +1,33 @@
+@import '~@/mixins.less';
+
+.riskBody {
+  text-align: left;
+  color: var(--main-text-1);
+  font-size: 12px;
+  :global {
+    .am-checkbox-agree {
+      margin-left: 0;
+      font-size: 12px;
+    }
+    .am-checkbox-inner {
+      border-radius: 3px;
+      width: 16px;
+      height: 16px;
+      &:after {
+        top: 0;
+        right: 4px;
+      }
+    }
+  }
+  .checkbox {
+    flex: 1;
+    label {
+      font-size: 13px;
+      color: var(--up-color);
+    }
+  }
+}
+.disabled {
+  color: var(--main-text-1);
+  pointer-events: none;
+}

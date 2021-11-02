@@ -1,0 +1,51 @@
+.header {
+  padding: 15px;
+  border-top: 10px solid var(--divider-color);
+  border-bottom: 10px solid var(--divider-color);
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+
+    label {
+      font-size: 16px;
+      margin: 0 5px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1890ff;
+      border-radius: 2px;
+      color: #fff;
+      font-size: 12px;
+      padding: 0 3px;
+      margin-right: 3px;
+    }
+  }
+  .handle {
+    i {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  .price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 12px;
+    label {
+      color: var(--main-text-2);
+      margin-right: 5px;
+    }
+  }
+}
+
+.popover {
+  :global {
+    .am-popover-item {
+      color: var(--main-text-1);
+      font-size: 12px;
+    }
+  }
+}

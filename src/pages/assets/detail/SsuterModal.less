@@ -1,0 +1,87 @@
+@import '~@/mixins.less';
+
+.content {
+  padding: 20px;
+}
+
+.head {
+  .flex-between-center;
+
+  h3 {
+    color: var(--main-text-1);
+    margin: 0;
+  }
+}
+
+.bar {
+  .flex-between-center;
+  margin: 20px 0 10px;
+  background-color: var(--background-color-2);
+  border-radius: 4px;
+  padding: 0 20px;
+  height: 40px;
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .from {
+    color: var(--up-color);
+
+    .circle {
+      background-color: var(--up-color);
+    }
+  }
+
+  .to {
+    color: var(--down-color);
+
+    .circle {
+      background-color: var(--down-color);
+    }
+  }
+
+  .btn {
+    background-color: var(--up-color);
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+
+    i {
+      color: #fff;
+      font-size: 24px;
+    }
+  }
+}
+
+.extra {
+  font-size: 13px;
+  color: var(--main-text-1);
+
+  .split {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+.tips {
+  color: var(--main-text-1);
+  text-align: left;
+  margin: 10px 0;
+  font-size: 12px;
+  span {
+    color: red;
+  }
+}
+
+.price {
+  .flex-between-center;
+  color: var(--main-text-1);
+  font-size: 12px;
+}

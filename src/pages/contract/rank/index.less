@@ -1,0 +1,166 @@
+.wrapper {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+
+  .down {
+    color: var(--down-color);
+  }
+
+  .up {
+    color: var(--up-color);
+  }
+
+  .header {
+    background: url('@/assets/img/contract/contract-rank-bg.png') no-repeat;
+    height: 166px;
+    background-size: contain;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    .rankTitle {
+      font-size: 26px;
+      font-weight: 900;
+      margin-left: 12px;
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+
+    .introduce {
+      margin-top: 8px;
+      width: 273px;
+      margin-left: 12px;
+      font-size: 12px;
+    }
+    .nickNameSetting {
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+      font-size: 12px;
+      background: #fff;
+      color: #3d3d56;
+      padding: 2px 10px;
+      border-radius: 10px 0 0 10px;
+      box-shadow: 0px 4px 20px rgba(111, 114, 175, 0.2);
+    }
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4px;
+    font-size: 14px;
+    span {
+      color: #75799e;
+      text-align: center;
+      line-height: 38px;
+
+      &:first-child {
+        margin-right: 32px;
+      }
+    }
+
+    span.active {
+      color: var(--up-color);
+      border-bottom: 2px solid var(--up-color);
+    }
+  }
+
+  .myRate {
+    width: 344px;
+    height: 84px;
+    margin-top: 12px;
+    box-shadow: 0px 2px 8px rgba(111, 114, 175, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 24px;
+
+        &:first-child {
+          color: #3d3d56;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .right {
+      span {
+        background: rgba(46, 188, 132, 0.1);
+        color: #2ebc84;
+        padding: 2px 8px;
+        font-size: 12px;
+        margin-right: 12px;
+      }
+
+      a {
+        background: rgba(24, 144, 255, 0.1);
+        color: #1890ff;
+        padding: 2px 8px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .rankList {
+    width: 344px;
+
+    .rankItem {
+      display: flex;
+      font-size: 12px;
+      height: 56px;
+      margin-top: 8px;
+      align-items: center;
+      padding: 0 10px;
+      background: #f8f9fc;
+
+      .left {
+        margin-right: 10px;
+        width: 34px;
+        display: inline-block;
+        color: #9ea1c0;
+        text-align: center;
+        font-size: 14px;
+        img {
+          width: 100%;
+        }
+      }
+
+      .mid {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          &:first-child {
+            color: #3d3d56;
+            font-weight: 600;
+          }
+
+          &:last-child {
+            color: #9ea1c0;
+          }
+        }
+      }
+
+      .right {
+        margin-left: auto;
+        font-size: 16px;
+      }
+    }
+  }
+}
+.modalContent {
+  text-align: left;
+  a {
+    color: var(--up-color);
+    text-decoration: underline;
+  }
+}

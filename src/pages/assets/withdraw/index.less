@@ -1,0 +1,109 @@
+@import '~@/mixins.less';
+
+.title {
+  font-size: 18px;
+}
+
+.extra {
+  color: var(--main-text-1);
+}
+
+.main {
+  background-color: var(--background-color-3);
+  text-align: center;
+  padding-bottom: 20px;
+
+  label {
+    color: var(--main-text-1);
+  }
+}
+
+.coin {
+  padding: 20px 0;
+
+  span {
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  background-size: cover;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.balances {
+  .flex-center-center;
+  text-align: center;
+
+  & > div {
+    flex: 1;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .split {
+    width: 44px;
+    height: 30px;
+    background-color: var(--main-color-light);
+    flex: inherit;
+  }
+}
+
+.valuation {
+  padding-bottom: 20px;
+  color: var(--main-text-1);
+  font-size: 12px;
+}
+
+.tabWrapper {
+  margin: 10px 0;
+  padding: 0 10px;
+  overflow-x: scroll;
+
+  .tab {
+    .flex-left-center;
+    width: max-content;
+
+    div {
+      font-size: 10px;
+      background-color: var(--background-color-3);
+      border-radius: 4px;
+      margin-right: 10px;
+      text-align: center;
+      border: 1px solid transparent;
+      position: relative;
+      padding: 4px 12px;
+
+      i {
+        position: absolute;
+        bottom: -11px;
+        right: -9px;
+        width: 32px;
+        height: 32px;
+        color: var(--up-color);
+        display: none;
+      }
+    }
+
+    .active {
+      border: 1px solid var(--up-color);
+
+      i {
+        display: block;
+      }
+    }
+
+    .disabled {
+      color: var(--main-text-2);
+      pointer-events: none;
+    }
+  }
+}

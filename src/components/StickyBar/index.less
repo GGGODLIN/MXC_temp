@@ -1,0 +1,30 @@
+.wrapper {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.isSticky {
+    background-size: 100vw 100vh;
+    background: var(--main-bg);
+  }
+
+  .arrow {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .extra {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

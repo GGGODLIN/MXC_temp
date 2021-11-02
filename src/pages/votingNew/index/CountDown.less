@@ -1,0 +1,69 @@
+.countdown {
+  position: relative;
+  width: 236px;
+
+  &.isOver {
+    .num,
+    .text {
+      color: rgba(255, 255, 255, 0.5) !important;
+    }
+  }
+
+  &.isVoting {
+    .num {
+      color: #ffd666 !important;
+    }
+  }
+
+  .text {
+    margin-bottom: 12px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  .times {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+    .item {
+      width: 47px;
+      height: 56px;
+      border-radius: 4px;
+      padding: 4px 0;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+
+      .num {
+        display: block;
+        margin-bottom: 2px;
+        line-height: 28px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #fff;
+      }
+
+      .unit {
+        display: block;
+        line-height: 20px;
+        font-size: 12px;
+        color: #9ea1c0;
+      }
+    }
+  }
+
+  .completed {
+    position: absolute;
+    bottom: -5px;
+    right: -40px;
+    width: 88px;
+    height: 88px;
+    background: url(@/assets/img/votingNew/completed.png) no-repeat center/100%;
+
+    &.en {
+      background: url(@/assets/img/votingNew/completed-en.png) no-repeat center/100%;
+    }
+  }
+}

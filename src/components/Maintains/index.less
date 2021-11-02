@@ -1,0 +1,59 @@
+.maintain {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('@/assets/img/maintain/bg.png') no-repeat center center;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .rightTop {
+    width: 600px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+  .leftBottm {
+    width: 600px;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+  }
+  .updating {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    & > img {
+      width: 250px;
+      margin-bottom: 50px;
+    }
+    p {
+      color: #fff;
+    }
+    .linkBtn {
+      height: 40px;
+      padding: 0 40px;
+      color: #fff;
+      line-height: 40px;
+      text-align: center;
+      background: #2ebc84;
+      display: inline-block;
+    }
+    .serverLink {
+      color: #fff;
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 15px;
+      }
+    }
+  }
+}

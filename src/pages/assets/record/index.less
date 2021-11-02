@@ -1,0 +1,213 @@
+@import '~@/mixins.less';
+
+.title {
+  font-size: 16px;
+  span {
+    color: var(--main-text-1);
+    margin: 0 15px;
+    display: inline-block;
+    padding-bottom: 2px;
+  }
+  .active {
+    color: var(--main-text-1);
+    border-bottom: 2px solid var(--up-color);
+  }
+}
+
+.items {
+  padding: 0 15px 20px 15px;
+  label {
+    color: var(--main-text-1);
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .currency {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+}
+.item {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: var(--background-color-3);
+  border-radius: 4px;
+}
+.box {
+  .flex-between-center;
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 10px;
+}
+.item {
+  font-size: 12px;
+}
+.status {
+  font-size: 14px;
+}
+.right {
+  text-align: right;
+  p {
+    margin-top: 5px;
+  }
+}
+.block {
+  .flex-between-center;
+  margin-top: 10px;
+  i {
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+}
+.fail {
+  .currency,
+  .status,
+  span {
+    color: var(--main-text-1);
+  }
+  span {
+    color: var(--up-color);
+  }
+}
+.revoke {
+  span {
+    color: var(--main-text-1);
+  }
+  .status {
+    color: var(--up-color);
+  }
+}
+
+.itemRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+  b {
+    color: var(--main-text-3);
+    font-size: 12px;
+  }
+  p {
+    color: var(--main-text-1);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  div > {
+    flex: 1;
+  }
+  div:nth-of-type(3) {
+    text-align: right;
+  }
+}
+
+.otherItem {
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.filter {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  min-height: 100%;
+  padding: 30px;
+  background-color: var(--background-color-2);
+
+  .filter-title {
+    margin-bottom: 25px;
+  }
+
+  .filter-section {
+    margin-bottom: 20px;
+  }
+
+  .filter-trade {
+    :global {
+      .am-input-control input {
+        font-size: 12px;
+      }
+
+      .am-input-extra {
+        margin-left: 0;
+
+        .iconfont {
+          font-size: 12px;
+        }
+      }
+
+      .am-list-item .am-list-line {
+        padding-right: 10px;
+      }
+
+      .am-list-item.am-input-item {
+        padding-left: 10px;
+      }
+    }
+
+    span {
+      margin: 0 5px;
+      font-size: 20px;
+    }
+  }
+
+  h3 {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: var(--main-text-1);
+  }
+
+  h4 {
+    text-align: left;
+    font-size: 12px;
+    color: var(--main-text-2);
+  }
+
+  .filter-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 12px;
+    color: var(--main-text-1);
+    background-color: var(--background-color-3);
+
+    svg {
+      display: none;
+      position: absolute;
+      right: -1px;
+      bottom: -1px;
+      width: 16px;
+      height: 16px;
+      fill: #00d08a;
+    }
+
+    &.current {
+      border: 1px solid #00d08a;
+
+      svg {
+        display: block;
+      }
+    }
+  }
+
+  .filter-handle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    :global {
+      .am-button {
+        min-width: 95px;
+      }
+    }
+  }
+}

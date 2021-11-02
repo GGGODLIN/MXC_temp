@@ -1,0 +1,157 @@
+.tip {
+  padding: 12px 15px;
+  margin-top: 20px;
+  background-color: var(--background-color-3);
+
+  h3 {
+    font-size: 14px;
+    color: var(--main-text-1);
+  }
+
+  p {
+    line-height: 22px;
+    font-size: 14px;
+    color: var(--main-text-2);
+  }
+
+  .warning {
+    color: var(--down-color);
+  }
+}
+
+.em {
+  color: var(--up-color);
+}
+
+.apiLink {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: underline;
+}
+
+.ip-tip {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: var(--main-text-2);
+}
+
+.error {
+  margin-bottom: 0;
+}
+
+.api-doc {
+  margin: 26px 0;
+  text-align: center;
+
+  :global {
+    .iconfont {
+      font-size: 12px;
+      margin-left: 5px;
+      color: var(--up-color);
+    }
+  }
+}
+
+.permission-wrapper {
+  margin: 25px 0;
+
+  .content-permission {
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
+    margin-bottom: 8px;
+    line-height: 20px;
+    font-size: 14px;
+    color: var(--main-text-1);
+  }
+
+  .permission {
+    margin-bottom: 6px;
+    font-size: 12px;
+
+    .name {
+      display: inline-block;
+      min-width: 60px;
+    }
+  }
+
+  :global {
+    .am-checkbox {
+      margin-right: 5px;
+    }
+    .am-checkbox .am-checkbox-input,
+    .am-checkbox-inner {
+      width: 15px;
+      height: 15px;
+    }
+    .am-checkbox-inner {
+      &::after {
+        top: 0;
+        right: 3px;
+      }
+    }
+  }
+}
+
+.success {
+  p {
+    margin: 10px 0 5px;
+    text-align: left;
+    font-size: 12px;
+    color: var(--main-text-1);
+  }
+
+  .warning {
+    color: var(--down-color);
+  }
+
+  .copy {
+    color: var(--up-color);
+  }
+}
+
+.applyWrapper {
+  display: flex;
+  flex-flow: nowrap column;
+  max-height: 75vh;
+  padding: 20px 0;
+}
+
+.applyHeader {
+  flex-shrink: 0;
+  padding-bottom: 12px;
+  margin: 0 15px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.applyTitle {
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 0;
+  color: var(--main-text-1);
+}
+
+.applyClose {
+  line-height: 28px;
+  font-size: 14px;
+  color: var(--main-text-3);
+}
+
+.applyContent {
+  flex-grow: 1;
+  padding: 12px 15px 0;
+  margin-bottom: 18px;
+  line-height: 22px;
+  text-align: left;
+  word-break: break-all;
+  font-size: 14px;
+  color: var(--main-text-2);
+  overflow-y: auto;
+}
+
+.applySure {
+  flex-shrink: 0;
+  margin: 0 15px;
+}

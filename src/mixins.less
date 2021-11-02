@@ -1,0 +1,55 @@
+//put mixins here
+.ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.flex-between-center() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-left-center() {
+  display: flex;
+  align-items: center;
+}
+
+.flex-right-center() {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.safe-inset-bottom() {
+  /* iphonex 安全区域 */
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-inset-top() {
+  /* iphonex 安全区域 */
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+}
+
+.error {
+  line-height: 16px;
+  margin: 10px 0;
+  font-size: 12px;
+  color: var(--down-color);
+}
+
+.inner-height(@height: 0px) {
+  position: absolute;
+  top: @height;
+  bottom: 0;
+  width: 100%;
+}

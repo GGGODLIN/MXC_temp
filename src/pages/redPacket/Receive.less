@@ -1,0 +1,214 @@
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 44px 0 0;
+  background-color: #df384e;
+
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    margin-bottom: 0;
+    line-height: 44px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .content {
+    height: 100%;
+    padding-bottom: 32px;
+    background-color: #df384e;
+    overflow: auto;
+  }
+
+  .logo {
+    width: 81px;
+    height: 17px;
+    margin: 0 auto;
+    background: url(@/assets/img/redPacket/logo.png) no-repeat;
+    background-size: contain;
+  }
+
+  .receive {
+    width: 371px;
+    height: 475px;
+    padding-top: 40px;
+    margin: 0 auto;
+    background: url(@/assets/img/redPacket/receive-bg.png) no-repeat;
+    background-size: contain;
+  }
+
+  .avatar {
+    width: 67px;
+    height: 67px;
+    margin: 0 auto;
+    border-radius: 50%;
+
+    &.avatar0 {
+      background: url(@/assets/img/redPacket/avatar0.png) no-repeat;
+      background-size: contain;
+    }
+    &.avatar1 {
+      background: url(@/assets/img/redPacket/avatar1.png) no-repeat;
+      background-size: contain;
+    }
+    &.avatar2 {
+      background: url(@/assets/img/redPacket/avatar2.png) no-repeat;
+      background-size: contain;
+    }
+    &.avatar3 {
+      background: url(@/assets/img/redPacket/avatar3.png) no-repeat;
+      background-size: contain;
+    }
+    &.avatar4 {
+      background: url(@/assets/img/redPacket/avatar4.png) no-repeat;
+      background-size: contain;
+    }
+    &.avatar5 {
+      background: url(@/assets/img/redPacket/avatar5.png) no-repeat;
+      background-size: contain;
+    }
+    &.avatar6 {
+      background: url(@/assets/img/redPacket/avatar6.png) no-repeat;
+      background-size: contain;
+    }
+    &.avatar7 {
+      background: url(@/assets/img/redPacket/avatar7.png) no-repeat;
+      background-size: contain;
+    }
+    &.avatar8 {
+      background: url(@/assets/img/redPacket/avatar8.png) no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .info {
+    margin-top: 4px;
+    margin-bottom: 0;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    color: #c5984c;
+  }
+
+  .country {
+    display: flex;
+    align-items: center;
+    margin: 68px 0 4px 2px;
+    line-height: 24px;
+    font-size: 16px;
+
+    .flag {
+      margin-right: 5px;
+      transform: scale(1.25);
+    }
+
+    :global {
+      .iconfont {
+        margin-top: 1px;
+        margin-left: 1px;
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+
+  .form {
+    width: 247px;
+    margin: 0 auto;
+
+    .item {
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .get {
+      font-size: 14px;
+      color: #df384e;
+
+      &.loading {
+        color: #9ea1c0;
+      }
+    }
+
+    :global {
+      .am-input-item.am-list-item {
+        padding-left: 12px;
+        border: none;
+        border-radius: 2px;
+        background-color: #fff;
+
+        .am-list-line {
+          padding-right: 12px;
+        }
+
+        .am-input-label {
+          position: relative;
+          width: auto;
+          padding-right: 10px;
+          margin-right: 10px;
+          font-size: 16px;
+          color: #3d3d56;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 1px;
+            height: 20px;
+            transform: translateY(-50%);
+            background-color: #f4f5f7;
+          }
+
+          .iconfont {
+            margin-top: 1px;
+            margin-left: 1px;
+            font-size: 14px;
+            color: #9ea1c0;
+          }
+        }
+
+        .am-input-control {
+          input {
+            display: block;
+            font-size: 14px;
+            color: #3d3d56;
+            caret-color: #3d3d56;
+          }
+        }
+      }
+
+      .am-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        background: linear-gradient(180deg, #ffe8a0 0%, #f4cd80 100%);
+
+        span {
+          color: #613400;
+        }
+      }
+    }
+  }
+
+  .rules {
+    width: 311px;
+    margin: -20px auto 40px;
+
+    p {
+      margin-bottom: 0;
+      line-height: 20px;
+      font-size: 12px;
+      color: #fff;
+    }
+  }
+}

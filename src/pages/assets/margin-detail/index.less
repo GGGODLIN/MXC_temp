@@ -1,0 +1,116 @@
+@import '~@/mixins.less';
+
+.accountRisk {
+  background: var(--background-color-2);
+  border-radius: 4px;
+  padding: 10px;
+  .flex-between-center;
+  span {
+    color: var(--main-text-2);
+    b {
+      font-weight: normal;
+      margin-left: 5px;
+      color: var(--main-text-1);
+    }
+  }
+}
+.area {
+  padding: 5px 15px;
+  font-size: 10px;
+  border-bottom: 5px solid var(--background-color-2);
+  h3 {
+    color: var(--main-text-1);
+    font-size: 16px;
+    border-bottom: 1px solid var(--divider-color);
+  }
+  table {
+    width: 100%;
+    height: 90px;
+    color: var(--main-text-2);
+    tr td:nth-of-type(3) {
+      text-align: right;
+    }
+  }
+}
+.explosion {
+  margin: 5px 0 15px;
+}
+.marginItemInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  p {
+    margin-bottom: 0;
+  }
+  div {
+    text-align: right;
+  }
+}
+
+.fixed {
+  .flex-center-center;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  padding: 5px;
+  .safe-inset-bottom();
+  background-color: var(--background-color-4);
+  :global {
+    .am-button {
+      margin: 5px 15px;
+      flex: 1;
+      border-color: var(--up-color) !important;
+      border-radius: 2px;
+      span {
+        color: var(--up-color);
+      }
+    }
+  }
+}
+
+.borrowItem {
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  &:nth-last-of-type(1) {
+    margin-bottom: 100px;
+  }
+  .top {
+    .flex-between-center;
+    margin-bottom: 10px;
+    span {
+      b {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: var(--up-color);
+        border-radius: 2px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 10px;
+      }
+      font-size: 12px;
+    }
+    :global {
+      .am-button-small {
+        border-color: var(--up-color) !important;
+        border-radius: 2px;
+        height: 20px;
+        line-height: 18px;
+        padding: 0px 10px;
+        span {
+          color: var(--up-color);
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .bottom {
+    height: 40px;
+  }
+}

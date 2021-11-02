@@ -1,0 +1,232 @@
+.orderContetn {
+  width: 100%;
+  padding: 25px 20px;
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  background: var(--background-color-4);
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .title {
+      font-weight: 500;
+      font-size: 24px;
+      color: var(--main-text-1);
+      flex: 1;
+    }
+    .allOrder {
+      text-align: right;
+      color: var(--main-text-2);
+      :global {
+        .icondrop {
+          color: var(--main-text-1);
+        }
+        .am-list-arrow {
+          width: 10px;
+          height: 10px;
+          color: var(--main-text-1);
+          margin-left: 5px;
+        }
+        .am-list-item .am-list-line {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  .orderListContent {
+    margin-top: 20px;
+    .orderList {
+      width: 100%;
+      // height: 120px;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-color-2);
+
+      .title {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .trading {
+          span:nth-of-type(1) {
+            color: var(--main-text-4);
+            font-weight: 500;
+            font-size: 16px;
+          }
+          span:nth-of-type(2) {
+            color: var(--main-text-3);
+            margin-left: 4px;
+          }
+        }
+        .orderState {
+          flex: 1;
+          text-align: right;
+          color: var(--main-text-3);
+        }
+      }
+      .orderInfo {
+        width: 100%;
+        display: flex;
+        margin-top: 16px;
+        font-size: 14px;
+
+        div {
+          text-align: left;
+          flex: 1;
+        }
+        p {
+          margin-bottom: 2px;
+          color: var(--main-text-3);
+        }
+        span {
+          color: var(--main-text-1);
+        }
+        div:nth-of-type(3) {
+          text-align: right;
+        }
+      }
+    }
+  }
+  :global {
+    .am-list-item .am-list-line .am-list-extra {
+      display: none;
+    }
+  }
+}
+.layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: #000000;
+  opacity: 0.5;
+}
+.creditCardCoin {
+  width: 100%;
+  height: 341px;
+  position: fixed;
+  bottom: 0;
+  background: #ffffff;
+  animation: sport 0.5s;
+  padding: 14px 20px;
+  // transform: translateY(541px);
+  .headerCoin {
+    width: 100%;
+    display: flex;
+    .filterTitle {
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--main-text-1);
+      flex: 1;
+    }
+    div:nth-of-type(2) {
+      text-align: right;
+    }
+  }
+  .creditCoin {
+    margin-top: 20px;
+    :global {
+      .am-search {
+        padding: 0;
+      }
+    }
+    .filterList {
+      width: 100%;
+      height: 430px;
+      overflow: auto;
+      .coinList {
+        height: 54px;
+        text-align: center;
+        line-height: 54px;
+        color: var(--main-text-1);
+        font-weight: 500;
+        font-size: 16px;
+        border-bottom: 1px solid var(--border-color-2);
+      }
+      .coinList:last-child {
+        border-bottom: none;
+      }
+
+      .serverContent {
+        .serverTitle {
+          color: var(--main-text-1);
+          font-size: 14px;
+        }
+        .serverList {
+          min-height: 84px;
+          padding-bottom: 8px;
+          margin-top: 8px;
+          border: 1px solid var(--border-color-2);
+          position: relative;
+          .headerContent {
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            .serverName {
+              margin-left: 8px;
+              color: var(--main-text-1);
+              font-weight: 500;
+              font-size: 14px;
+            }
+            .serverSelectIcon {
+              flex: 1;
+              text-align: right;
+            }
+            svg {
+              width: 23px;
+              height: 23px;
+              padding: 3px;
+              border: 1px solid var(--border-color-2);
+              border-radius: 50%;
+            }
+          }
+          .serverIconList {
+            width: 100%;
+            display: flex;
+            padding-left: 12px;
+            padding-right: 12px;
+            flex-wrap: wrap;
+            // margin-bottom:12px ;
+            .iconbg {
+              //  padding: 4px;
+              min-width: 34px;
+
+              text-align: center;
+              background: var(--background-color-3);
+              &:not(:first-child) {
+                margin-left: 5px;
+              }
+              svg {
+                width: 24px !important;
+                height: 14px !important;
+              }
+            }
+          }
+          .activeIcon {
+            width: 0;
+            height: 0;
+            border-top: 28px solid var(--main-text-4);
+            border-left: 28px solid transparent;
+            position: absolute;
+            right: 0;
+            :global {
+              .iconconfirm {
+                top: -29px;
+                right: 4px;
+                font-size: 12px;
+                font-weight: 600;
+                color: #ffffff;
+                position: absolute;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+:global {
+  .am-picker-col-item-selected {
+    color: var(--main-text-4) !important;
+  }
+}

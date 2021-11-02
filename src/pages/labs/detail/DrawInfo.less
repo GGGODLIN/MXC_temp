@@ -1,0 +1,42 @@
+@import '~@/mixins.less';
+
+.drawItem {
+  height: 35px;
+  border-bottom: 1px solid var(--divider-color);
+  .flex-between-center();
+  b {
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    i {
+      font-size: 10px;
+    }
+    &.allTic {
+      background-color: #5c574e;
+      color: #f7b500;
+    }
+    &.wonTic {
+      background-color: #335655;
+      color: #00d38b;
+    }
+  }
+}
+
+.tickets {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.emptyTic {
+  width: 90px;
+}
+
+.link {
+  text-align: center;
+  margin-bottom: 0;
+  a {
+    color: var(--up-color);
+  }
+}

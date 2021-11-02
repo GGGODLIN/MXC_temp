@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100vw;
+    padding-bottom: 4.8vw;
+    background: #27273C url(/baidu_land/img/wrapper_bg.png) no-repeat center top;
+    background-size: 100vw 356.26666vw;
+}
+
+.wrapper .customer {
+    position: fixed;
+    top: 50.66666vw;
+    right: 4vw;
+    width: 12.8vw;
+    height: 12.8vw;
+    background: url(/baidu_land/img/customer.png) no-repeat;
+    background-size: contain;
+}
+.wrapper .customer .qrcode {
+    position: absolute;
+    top: -10vw;
+    left: -35vw;
+    width: 32.26666vw;
+    height: 37.33333vw;
+    transform: scale(0);
+    transform-origin: 100% 45%;
+    transition: all 0.2s;
+    background: url(/baidu_land/img/customer_qrcode.png) no-repeat;
+    background-size: contain;
+    opacity: 0;
+}
+.wrapper .customer.show .qrcode {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.header {
+    margin-bottom: 26vw;
+    overflow: hidden;
+}
+.header .logo {
+    margin: 12.26666vw 0 9.06666vw 5.86666vw;
+}
+.header .logo img {
+    display: block;
+    width: 15.46666vw;
+    height: 3.46666vw;
+}
+.header .title {
+    margin-bottom: 2.1vw;
+    line-height: 8.8vw;
+    text-align: center;
+    font-family:PingFangSC-Semibold,PingFang SC;
+    font-weight:600;
+    font-size: 6.4vw;
+    color: #fff;
+}
+.header .slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vw;
+    line-height: 5.33333vw;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    font-size: 3.73333vw;
+    color: #fff;
+}
+.header .slogan span {
+    width: 0;
+    height: 0;
+    border: 1.06666vw solid #fff;
+    border-color: transparent transparent transparent #fff;
+    margin-left: 2.13332vw;
+    margin-right: 1.06666vw;
+}
+.header .register a {
+    display: block;
+    width: 35.73333vw;
+    height: 9.06666vw;
+    border-radius: 4.53333vw;
+    margin: 0 auto;
+    line-height: 9.06666vw;
+    text-align: center;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    font-size: 4.26666vw;
+    color: #fff;
+    background: linear-gradient(306deg,rgba(117,251,177,1) 0%,rgba(0,131,119,1) 100%);
+}
+
+.platform {
+    width: 100vw;
+    height: 180.93333vw;
+    background: url(/baidu_land/img/platform_bg.png) no-repeat center top;
+    background-size:  93.06666vw 141.73333vw;
+    overflow: hidden;
+}
+.platform h2 {
+    margin-top: 4.8vw;
+    margin-bottom: 3.5vw;
+    line-height: 4.26666vw;
+    text-align: center;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    font-weight: 600;
+    font-size: 4.26666vw;
+    color: #fff;
+}
+.platform .description {
+    padding: 0 7.46666vw;
+    line-height: 4.26666vw;
+    text-align: center;
+    font-family: PingFangSC-Regular,PingFang SC;
+    font-weight: 400;
+    font-size: 3.2vw;
+    color: #9B9BA5;
+}
+.platform .home {
+    display: block;
+    width: 21.86666vw;
+    height: 5.6vw;
+    border: 1px solid #fff;
+    border-radius: 2.8vw;
+    margin: 60vw auto 14.66666vw;
+    line-height: 5.6vw;
+    text-align: center;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    font-weight: 600;
+    font-size: 3.2vw;
+    color: #fff;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6vw;
+}
+.contact-item .icon {
+    margin-left: 1.6vw;
+}
+.contact-item .icon img {
+    display: block;
+    width: 18.13333vw;
+    height: 18.13333vw;
+}
+.contact-item .info {
+    width: 50vw;
+    margin-right: 6vw;
+}
+.contact-item .info h4 {
+    margin-bottom: .5vw;
+    line-height: 5.33333vw;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-size: 3.73333vw;
+    font-weight: 500;
+    color: #fff;
+}
+.contact-item p {
+    line-height: 4.53333vw;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #9B9BA5;
+}
+.contact-item a {
+    display: block;
+    width: 20vw;
+    height: 6.13333vw;
+    border-radius: 10vw;
+    line-height: 6.13333vw;
+    text-align: center;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    font-size: 3.2vw;
+    color: #fff;
+}
+
+.contact-item .telegram-en {
+    background: linear-gradient(90deg,rgba(26,41,128,1) 0%,rgba(38,208,206,1) 100%);
+}
+.contact-item .telegram-cn {
+    background: linear-gradient(270deg,rgba(110,214,255,1) 0%,rgba(32,174,245,1) 42%,rgba(15,141,232,1) 77%,rgba(0,112,220,1) 100%);
+}
+.contact-item .study {
+    background: linear-gradient(270deg,rgba(73,187,124,1) 0%,rgba(0,132,119,1) 100%);
+}
+
+.block-chain {
+    width: 100vw;
+    height: 123.46666vw;
+    padding: 5.33333vw 4vw;
+    box-sizing: border-box;
+    background: url(/baidu_land/img/block_chain_bg.png) no-repeat;
+    background-size: contain;
+}
+.block-chain h2 {
+    margin-bottom: 8vw;
+    line-height: 5.86666vw;
+    text-align: center;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    font-weight: 600;
+    font-size: 4.26666vw;
+    color: #130928;
+}
+.block-chain-item {
+    display: flex;
+    align-items: start;
+    margin-bottom: 13vw;
+}
+.block-chain-item .icon {
+    width: 10.13333vw;
+    margin-right: 4vw;
+}
+.block-chain-item .icon img {
+    width: 10.13333vw;
+}
+.block-chain-item .description h3 {
+    margin-bottom: 1vw;
+    line-height: 5.33333vw;
+    font-family:PingFangSC-Semibold,PingFang SC;
+    font-weight:600;
+    font-size: 3.73333vw;
+    color: #2F2E4E;
+}
+.block-chain-item .description p {
+    line-height: 4.53333vw;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    font-size: 3.2vw;
+    color: #9A9EBA;
+}
+
+.platform-trait {
+    padding: 8.53333vw 8.53333vw 5vw;
+}
+.trait-item {
+    margin-bottom: 12.8vw;
+}
+.trait-item .icon {
+    width: 12.53333vw;
+    margin: 0 auto 1.33333vw;
+}
+.trait-item .icon img {
+    width: 100%;
+}
+.trait-item h4 {
+    margin-bottom: 1.06666vw;
+    line-height: 4.53333vw;
+    text-align: center;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    font-weight: 600;
+    font-size: 3.73333vw;
+    color: #fff;
+}
+.trait-item p {
+    line-height: 4.53333vw;
+    text-align: center;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight: 400;
+    font-size: 3.2vw;
+    color: #9B9BA5;
+}
+
+.app-qrcode-wrapper {
+    width: 86.4vw;
+    height: 116.8vw;
+    margin: 0 auto 14vw;
+    background: url(/baidu_land/img/app_qrcode_bg.png) no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+.app-qrcode-wrapper .app-qrcode {
+    width: 16.26666vw;
+    height: 15.46666vw;
+    margin: 25.6vw auto 12.8vw;
+}
+.app-qrcode-wrapper .app-qrcode img {
+    width: 100%;
+}
+.app-qrcode-wrapper h3 {
+    line-height: 5.86666vw;
+    text-align: center;
+    font-family:PingFangSC-Semibold,PingFang SC;
+    font-weight:600;
+    font-size: 4.26666vw;
+    color: #fff;
+}
+
+.super-node h2 {
+    margin-bottom: 2vw;
+    line-height: 5.86666vw;
+    text-align: center;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    font-weight: 600;
+    font-size: 4.26666vw;
+    color: #fff;
+}
+.super-node p {
+    line-height: 4.53333vw;
+    text-align: center;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    font-size: 3.2vw;
+    color: #9B9BA5;
+}
+.super-node .super-node-img {
+    width: 92vw;
+    margin: 6.4vw auto 16.8vw;
+}
+.super-node .super-node-img img {
+    width: 100%;
+}
+.website {
+    width: 72.26666vw;
+    margin: 0 auto 6.4vw;
+}
+.website img {
+    width: 100%;
+}
+
+.footer-handle {
+    display: flex;
+    justify-content: space-between;
+    width: 55vw;
+    margin: 0 auto 6.4vw;
+}
+.footer-handle a {
+    display: inline-block;
+    width: 21.6vw;
+    height: 6.66666vw;
+    border-radius: 3.33333vw;
+    border: 1px solid #fff;
+    line-height: 6.66666vw;
+    text-align: center;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    font-size: 3.2vw;
+    color: #fff;
+}
+.footer-handle .footer-handle-register {
+    border-color: #00d38b;
+    color: #00d38b;
+}
+
+.footer .footer-email {
+    display: block;
+    margin-bottom: 1.6vw;
+    line-height: 4.53333vw;
+    text-align: center;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #9B9BA5;
+}
+
+.footer p {
+    margin-top: 6.93333vw;
+    line-height: 4.53333vw;
+    text-align: center;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    font-size: 3.2vw;
+    color: #3d3d56;
+}
+

@@ -1,0 +1,560 @@
+@import '~@/mixins.less';
+
+.posList {
+  .banner {
+    position: relative;
+    height: 148px;
+    background: #100f3e;
+    border-top: 1px solid transparent;
+    background-size: 100%;
+    h1 {
+      color: #fff;
+      margin: 32px 0 14px 17px;
+      font-size: 28px;
+      line-height: 28px;
+      position: relative;
+      width: 80%;
+      z-index: 1;
+    }
+
+    h2 {
+      color: #fff;
+      margin-left: 17px;
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+      width: 75%;
+    }
+
+    .bannerImg {
+      height: 145px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .link {
+      position: absolute;
+      right: 0;
+      top: 25px;
+      color: #3d3d56;
+      height: 20px;
+      font-size: 12px;
+      line-height: 20px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      z-index: 2;
+      background: #fff;
+      padding-left: 5px;
+    }
+  }
+  .Wrapper {
+    background: #100f3e;
+  }
+  .listBox {
+    padding: 0 12px;
+    background: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    .head {
+      color: #9ea1c0;
+      height: 43px;
+      .flex-between-center();
+
+      h2 {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 0;
+      }
+      span {
+        width: 50%;
+        line-height: 44px;
+        text-align: center;
+      }
+      span.active {
+        position: relative;
+        color: var(--up-color);
+        &:after {
+          content: '';
+          height: 1px;
+          width: 48px;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: var(--up-color);
+        }
+      }
+    }
+
+    .class {
+      padding: 12px 0;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        width: 96px;
+        border-radius: 4px;
+        color: #fff;
+        border: 1px solid #fff;
+        line-height: 28px;
+        text-align: center;
+
+        &.active {
+          color: #008477;
+          background-color: #fff;
+        }
+      }
+    }
+
+    .coins {
+      height: 67px;
+      background-color: #fff;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      margin-top: 16px;
+      border-radius: 4px;
+
+      .mxcPal {
+        height: 17px;
+        width: auto;
+      }
+
+      img {
+        width: 42px;
+        height: 42px;
+        margin-right: 5px;
+      }
+
+      b {
+        font-size: 18px;
+        color: #333;
+        display: block;
+      }
+
+      span {
+        font-size: 12px;
+        color: #8e8e8e;
+      }
+
+      .rate {
+        text-align: right;
+      }
+    }
+  }
+
+  .listSwarp {
+    background-color: #fff;
+    .head {
+      height: 43px;
+      border-bottom: 1px solid #00453f;
+      .flex-between-center();
+
+      h2 {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 0;
+      }
+    }
+
+    .coins {
+      background-color: #fff;
+      padding: 12px;
+      height: 186px;
+      box-shadow: 0px 2px 8px rgba(111, 114, 175, 0.15);
+      margin-bottom: 16px;
+      border-radius: 4px;
+      position: relative;
+
+      img {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        .currency {
+          b {
+            font-size: 18px;
+            color: #3d3d56;
+            margin-right: 5px;
+            font-weight: normal;
+          }
+          span {
+            color: #9ea1c0;
+          }
+        }
+      }
+      .info {
+        margin: 14px 0;
+        height: 64px;
+        .text {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          b {
+            font-size: 14px;
+            color: #333;
+            font-weight: normal;
+            &.rate {
+              color: #2ebc84;
+              font-weight: bold;
+            }
+          }
+          span {
+            font-size: 12px;
+            color: #9ea1c0;
+          }
+        }
+        .progressOuter {
+          background-color: #f4f5f7;
+          display: block;
+          height: 8px;
+          border-radius: 4px;
+          position: relative;
+          margin: 4px 0 10px;
+          .progressInner {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #3ca48f 0%, #3fe6aa 100%);
+            border-radius: 8px;
+          }
+        }
+      }
+      .btns {
+        :global {
+          .am-button.am-button-ghost.am-button-disabled {
+            background: #f8f9fc;
+            border: 1px solid #f8f9fc !important;
+            span {
+              color: #9ea1c0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.listSwarp {
+  padding: 20px 15px 15px;
+  min-height: calc(100vh - 200px);
+}
+.mxDefiItem {
+  h3 {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    .icon {
+      background: #52c41a;
+      border-radius: 2px;
+      width: 18px;
+      height: 18px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      margin-right: 4px;
+      box-shadow: -2px 2px 0px #d9f7be;
+    }
+  }
+}
+.pawnItems {
+  margin-bottom: 10px;
+  .pawnItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 48%;
+    height: 98px;
+    border-radius: 4px;
+    color: #3d3d56;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 2px 8px rgba(111, 114, 175, 0.15);
+    & > div {
+      text-align: center;
+      font-size: 26px;
+    }
+    span {
+      display: block;
+      font-size: 12px;
+      color: #9ea1c0;
+    }
+
+    &:nth-of-type(1) {
+      background-image: url('@/assets/img/mxDefi/lt.png');
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    &:nth-of-type(2) {
+      background-image: url('@/assets/img/mxDefi/rt.png');
+      margin-bottom: 8px;
+    }
+    &:nth-of-type(3) {
+      background-image: url('@/assets/img/mxDefi/lb.png');
+      margin-right: 8px;
+    }
+    &:nth-of-type(4) {
+      background-image: url('@/assets/img/mxDefi/rb.png');
+    }
+  }
+}
+
+.finacialList {
+  overflow-x: scroll;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 4px;
+  padding-left: 4px;
+  margin-left: -4px;
+  margin-bottom: 15px;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    min-height: 28px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  & > div {
+    width: max-content;
+  }
+  .minerItem {
+    float: left;
+    padding: 8px;
+    height: 134px;
+    min-width: 156px;
+    box-shadow: 0px 2px 8px rgba(111, 114, 175, 0.15);
+    border-radius: 4px;
+    margin-right: 8px;
+    position: relative;
+    .icon {
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: #3d3d56;
+      img {
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
+      }
+      span {
+        font-size: 14px;
+        line-height: 24px;
+        height: 24px;
+      }
+    }
+    p {
+      margin: 4px 0;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      span {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #00d38b;
+        display: block;
+      }
+    }
+
+    .tag {
+      font-size: 11px;
+      line-height: 18px;
+      height: 18px;
+    }
+    :global {
+      .am-button {
+        height: 26px;
+        line-height: 26px;
+        font-size: 12px;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.tag {
+  background: rgba(24, 144, 255, 0.07);
+  color: #1890ff;
+  padding: 2px 8px 2px 10px;
+  border-radius: 0px 4px 0px 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.coming {
+  text-align: center;
+  color: #9ea1c0;
+  font-size: 12px;
+  img {
+    width: 94px;
+    margin-top: 154px;
+  }
+}
+
+.defiItem {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.5s;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(111, 114, 175, 0.15);
+
+  .coinImg {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 18px;
+      height: 18px;
+      margin-right: 4px;
+    }
+    b {
+      line-height: 30px;
+      font-size: 18px;
+      margin-right: 4px;
+    }
+    span {
+      font-size: 14px;
+      color: #9ea1c0;
+    }
+  }
+
+  .miningInfo {
+    margin: 16px 0 12px;
+    p {
+      color: #9ea1c0;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+
+    .textinfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 20px;
+      font-size: 12px;
+
+      &:nth-of-type(1) {
+        height: 52px;
+        margin-bottom: 14px;
+        b {
+          font-weight: 500;
+          color: var(--up-color);
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+      p {
+        color: #75799e;
+        line-height: 20px;
+      }
+      b.black {
+        color: #3d3d56;
+        line-height: 20px;
+      }
+    }
+    .flexStart {
+      justify-content: start;
+      b {
+        color: var(--up-color);
+      }
+    }
+  }
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  :global {
+    .ant-btn {
+      height: 30px;
+      line-height: 30px;
+      border-radius: 2px;
+    }
+    .ant-progress-line {
+      top: -5px;
+    }
+    .ant-progress-inner {
+      background-color: #f4f5f7;
+    }
+    .ant-btn.ant-btn-ghost[disabled] {
+      color: #9ea1c0;
+      background-color: #f8f9fc;
+      border-color: #f8f9fc;
+    }
+  }
+  .defiLogo {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    top: 0;
+    background: rgba(24, 144, 255, 0.07);
+    color: #1890ff;
+    padding: 3px 10px;
+    border-radius: 0px 4px 0px 16px;
+  }
+}
+
+.progressOuter {
+  background-color: #f4f5f7;
+  display: block;
+  height: 8px;
+  border-radius: 4px;
+  position: relative;
+  width: calc(100% - 36px);
+  margin: 4px auto 10px;
+  .progressInner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 8px;
+    background: linear-gradient(90deg, #3ca48f 0%, #3fe6aa 100%);
+    border-radius: 8px;
+    span {
+      height: 16px;
+      position: absolute;
+      left: 100%;
+      top: -4px;
+      transform: translateX(-15px) scale(0.9);
+      background: var(--up-color);
+      color: #fff;
+      border-radius: 2px;
+      text-align: center;
+      line-height: 16px;
+      padding: 0 2px;
+    }
+  }
+}

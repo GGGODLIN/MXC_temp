@@ -1,0 +1,113 @@
+.modelContent {
+  width: 100%;
+  .layer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #000000;
+    opacity: 0.5;
+  }
+  .infoContent {
+    width: 340px;
+    //  height: 384px;
+    padding-bottom: 12px;
+    background: var(--background-color-4);
+    margin: 30% auto;
+    // box-shadow: inset 0px 1px 0px #e5e8f8;
+    border-radius: 2px;
+    .headerTitle {
+      width: 100%;
+      height: 56px;
+      padding: 16px 20px;
+      //  border-bottom: 1px solid  var(--border-color-2);
+      display: flex;
+
+      .title {
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--main-text-1);
+      }
+      .close {
+        flex: 1;
+        text-align: right;
+      }
+    }
+    .introduce {
+      padding: 16px 20px;
+      border: 1px solid var(--border-color-2);
+      .introduceTitle {
+        font-weight: 500;
+        font-size: 12px;
+        color: var(--main-text-1);
+        margin-bottom: 8px;
+      }
+      .introduceInfo {
+        background: var(--credit-bg-1);
+        border-radius: 2px;
+        padding: 13px 11px;
+        font-size: 12px;
+
+        p {
+          margin-bottom: 4px;
+        }
+        :global {
+          .iconguanyux {
+            color: #faad14;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    :global {
+      .am-list-item {
+        padding-left: 0;
+      }
+      .am-list-thumb:first-child {
+        margin-right: 8px;
+      }
+      .am-checkbox-inner:after {
+        right: 7px;
+      }
+    }
+    .check {
+      margin-top: 13px;
+    }
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    div {
+      height: 44px;
+    }
+    .commonBtn {
+      padding: 10px 0;
+      width: 48%;
+      border-radius: 2px;
+      text-align: center;
+      &.cancel {
+        border: 1px solid var(--border-color-2);
+      }
+      &.ok {
+        background: var(--main-text-4);
+        color: #ffffff;
+      }
+    }
+  }
+  .modelCentent {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+.nosellBtn {
+  background: #ee2c5a;
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: crosshair;
+}

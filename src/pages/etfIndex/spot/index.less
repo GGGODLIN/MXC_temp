@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.name {
+  span {
+    font-size: 18px;
+    margin: 0 4px;
+  }
+
+  i:last-child {
+    font-size: 18px;
+    color: var(--main-text-3);
+  }
+}
+
+.price {
+  color: var(--up-color);
+
+  span {
+    font-size: 30px;
+    vertical-align: middle;
+  }
+
+  i {
+    font-style: initial;
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  &.down {
+    color: var(--down-color);
+  }
+}
+
+.right {
+  font-size: 12px;
+
+  label {
+    color: var(--main-text-2);
+  }
+
+  span {
+    margin-left: 30px;
+  }
+
+  div {
+    margin-top: 5px;
+  }
+}
+
+.btnWrap {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+
+  div {
+    flex: 1;
+    padding: 5px;
+    display: block;
+  }
+}
+
+.desc {
+  text-align: left;
+  p {
+    color: var(--main-text-1);
+    font-size: 12px;
+  }
+  a {
+    color: var(--up-color);
+    font-size: 12px;
+  }
+}

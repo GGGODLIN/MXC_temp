@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="manifest" href="/manifest.json">
+  <meta id="viewport" name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+  <meta name="app-config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+  <meta name="theme-color" content="#21202A" />
+  <meta name="mexc_h5_version" content="<%= context.config.define.VERSION %>"/>
+  <!-- ios -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name ="apple-mobile-web-app-title" content="MEXC H5">
+  <link rel="apple-touch-icon" sizes="128x128" href="/icons/icon-128x128.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png">
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <meta name="google" content="notranslate" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- qq强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- uc强制全屏 -->
+  <meta name="full-screen" content="yes">
+  <!-- qq强制全屏 -->
+  <meta name="x5-fullscreen" content="true">
+  <!-- uc应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- qq应用模式 -->
+  <meta name="x5-page-mode" content="app">
+
+  <title>MEXC - Bitcoin, Litecoin and Ethereum Exchange and Margin, ETF and Futures Trading</title>
+  <meta name="description"
+    content="MEXC is a secure and reliable Crypto asset exchange for trading Bitcoin, Ethereum, Litecoin, EOS, TRON, USDT, XRP, etc. MEXC provides various services: Spot, ETF, Margin, OTC, Futures, PoS Staking"
+    class="next-head">
+  <meta name="keywords"
+    content="Blockchain Crypto Exchange, Crypto asset Exchange, Buy Bitcoin, Bitcoin Exchange, Bitcoin Trading, Blockchain Crypto Trading Platform, Ethereum price trend, MEXC, BTC price, ETH wallet registration, Buy Crypto asset with Credit Card, BTC to USDT, BTC Chart, ETH Price, LTC price, "
+    class="next-head">
+  <link rel="icon" href="/favicon.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1302282_rzdc5py5df.css">
+  <script src="//at.alicdn.com/t/font_1302282_rzdc5py5df.js" defer type="text/javascript"></script>
+  <script src="<%= context.publicPath %>library/geetest.js?v=0.4.9" defer type="text/javascript"></script>
+  <script src="<%= context.publicPath %>library/klinecharts.production.v0.5.min.js" defer type="text/javascript"></script>
+  <script>
+    var isMobile = /(iPhone|iPad|iPod|iOS|Android)/i.test(window.navigator.userAgent);
+    if (!isMobile && window.location.origin.indexOf('https://m.') > -1 && window.location.pathname.indexOf('signup') > -1) {
+      window.location.href = window.location.href.replace(/m\./, 'www.');
+    }
+    function getQueryVariable(variable) {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) { return pair[1]; }
+      }
+    }
+    var client = getQueryVariable('client')
+    if (client) {
+      window.localStorage.setItem('mxc.view.from', client);
+    }else{
+      window.localStorage.setItem('mxc.view.from', '');
+    }
+  </script>
+  <% if(context.env==='production' ) { %>
+    <script src="https://hm.baidu.com/hm.js?bfc2c0a173378480991465c3626cc9b9" defer type="text/javascript"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6XJCQTK75"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-L6XJCQTK75');
+    </script>
+    <% } %>
+</head>
+
+<body>
+  <noscript>Sorry, we need js to run correctly!</noscript>
+  <div id="root"></div>
+</body>
+
+</html>

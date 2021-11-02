@@ -1,0 +1,49 @@
+@import '~@/mixins.less';
+
+.main {
+  height: 55px;
+  .content {
+    .flex-between-center;
+    padding: 0 20px;
+    height: 55px;
+    background-color: var(--background-color-3);
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color-3);
+    z-index: 9;
+    border-bottom: 1px solid var(--divider-color);
+  }
+  :global {
+    .am-checkbox-agree {
+      margin-left: 0;
+      font-size: 12px;
+    }
+
+    .am-checkbox-inner {
+      border-radius: 3px;
+      width: 16px;
+      height: 16px;
+      &:after {
+        top: 0;
+        right: 4px;
+      }
+    }
+  }
+
+  .checkbox {
+    flex: 1;
+
+    label {
+      font-size: 13px;
+      color: var(--main-text-1);
+    }
+  }
+
+  .search {
+    width: 170px;
+  }
+}

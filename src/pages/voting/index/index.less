@@ -1,0 +1,351 @@
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 64px;
+  padding-bottom: 88px;
+  color: #fff;
+  background: #222 url(@/assets/img/voting/index_bg.png) no-repeat center top;
+  background-size: contain;
+
+  &.app {
+    padding-top: 24px;
+
+    .circle {
+      top: 116px;
+    }
+  }
+
+  .header-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    background: url(@/assets/img/voting/index_bg.png) no-repeat left top;
+    background-size: 375px 406px;
+    z-index: 2;
+  }
+
+  .circle {
+    position: absolute;
+    top: 156px;
+    right: 79px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #05865a;
+  }
+
+  .banner-cn {
+    width: 260px;
+    height: 37px;
+    margin: 0 auto 8px;
+    background: url(@/assets/img/voting/index_banner.png) no-repeat;
+    background-size: contain;
+  }
+
+  .banner-en {
+    width: 321px;
+    height: 27px;
+    margin: 10px auto 8px;
+    background: url(@/assets/img/voting/index_banner_en.png) no-repeat;
+    background-size: contain;
+  }
+
+  .title-en {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(154, 224, 206, 1);
+  }
+
+  .count-down {
+    margin-top: 22px;
+    margin-bottom: 7px;
+  }
+
+  .desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 345px;
+    height: 51px;
+    padding: 0 10px;
+    margin: 0 auto;
+    //font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    background: url(@/assets/img/voting/desc_bg.png);
+    background-size: contain;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    b {
+      font-weight: normal;
+    }
+
+    span {
+      width: 18px;
+      height: 11px;
+      margin-right: 5px;
+      background: url(@/assets/img/voting/desc_icon.png);
+      background-size: contain;
+    }
+  }
+}
+
+.content {
+  margin-top: 24px;
+
+  h4 {
+    display: inline-block;
+    padding-left: 17px;
+    line-height: 25px;
+    font-size: 18px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    color: #fff;
+
+    :global {
+      .iconfont {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .list {
+    padding: 15px 0;
+    background: #041d1e url(@/assets/img/voting/index_content_bg.png) no-repeat center top;
+    background-size: 375px;
+  }
+
+  .item {
+    padding: 15px 17px;
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ranking-name {
+      display: flex;
+      align-items: center;
+      width: 150px;
+
+      .ranking {
+        flex: 0 0 auto;
+        width: 32px;
+        height: 32px;
+        margin-right: 5px;
+
+        &.ranking1 {
+          background: url(@/assets/img/voting/ranking1.png) no-repeat left center;
+          background-size: contain;
+        }
+
+        &.ranking2 {
+          background: url(@/assets/img/voting/ranking2.png) no-repeat left center;
+          background-size: contain;
+        }
+
+        &.ranking3 {
+          background: url(@/assets/img/voting/ranking3.png) no-repeat left center;
+          background-size: contain;
+        }
+
+        &.ranking4 {
+          background: url(@/assets/img/voting/ranking4.png) no-repeat center center;
+          background-size: 18px;
+        }
+
+        &.ranking5 {
+          background: url(@/assets/img/voting/ranking5.png) no-repeat center center;
+          background-size: 19px;
+        }
+      }
+
+      h5 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        line-height: 21px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+
+        span {
+          width: 5px;
+          height: 8px;
+          margin-left: 5px;
+          background: url(@/assets/img/voting/array_right.png) no-repeat left center;
+          background-size: contain;
+        }
+      }
+
+      p {
+        margin-top: 3px;
+        margin-bottom: 0;
+        line-height: 15px;
+        font-size: 12px;
+        color: #008477;
+      }
+    }
+
+    .poll {
+      flex: 1;
+      line-height: 17px;
+      font-size: 12px;
+      color: #fff;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .num {
+        margin-top: 3px;
+        line-height: 21px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #f7b500;
+      }
+    }
+
+    .handle {
+      :global {
+        .am-button-primary {
+          min-width: 70px;
+          height: 30px;
+          padding: 0 10px;
+          border-radius: 15px;
+          line-height: 30px;
+          background: #f7b500;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .incentive {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 23px;
+      padding-left: 10px;
+      margin-top: 12px;
+
+      .skew {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: skewX(-15deg);
+        background-color: #011011;
+      }
+
+      p {
+        position: relative;
+        margin-right: 10px;
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 15px;
+        color: #fff;
+        z-index: 1;
+
+        span {
+          margin-right: 5px;
+          color: #008477;
+        }
+      }
+    }
+  }
+}
+
+.bottom-handle {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 24px 34px;
+  background-color: #222;
+  z-index: 2;
+
+  :global {
+    .am-button {
+      width: 146px;
+      height: 40px;
+      border-radius: 20px;
+      line-height: 40px;
+    }
+  }
+
+  .my {
+    background: #00d38b;
+  }
+
+  .rule {
+    border-color: #fff !important;
+
+    span {
+      color: #fff;
+    }
+  }
+}
+
+.rule-modal {
+  padding: 10px 24px 33px;
+  text-align: left;
+  background-color: #3f414e;
+
+  h3 {
+    margin-bottom: 20px;
+    line-height: 22px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .rule-list {
+    max-height: 396px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+
+    p {
+      line-height: 17px;
+      font-size: 12px;
+      color: #fff;
+    }
+  }
+
+  .rule-handle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      margin-bottom: 0;
+      line-height: 17px;
+      font-size: 12px;
+      color: #fff;
+    }
+
+    :global {
+      .am-button {
+        width: 105px;
+        height: 40px;
+        border-radius: 20px;
+        line-height: 40px;
+        background: #00d38b;
+      }
+    }
+  }
+}

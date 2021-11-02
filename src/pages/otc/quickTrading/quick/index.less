@@ -1,0 +1,174 @@
+.quickContent {
+  width: calc(100% - 16px);
+  margin: 12px auto;
+  border-radius: 2px;
+  padding: 0 8px;
+  .quickHeaderTab {
+    span {
+      font-size: 14px;
+      margin: 12px 0;
+      display: inline-block;
+      color: #5e6d7e;
+    }
+
+    span:nth-of-type(2) {
+      margin-left: 16px;
+    }
+    .tabActive {
+      color: var(--main-text-1);
+    }
+  }
+  .quickPrice {
+    display: flex;
+    margin-top: 4px;
+    div {
+      flex: 1;
+    }
+    div:nth-of-type(1) {
+      text-align: left;
+      color: #5e6d7e;
+    }
+    div:nth-of-type(2) {
+      text-align: right;
+      color: var(--main-text-1);
+    }
+  }
+  .quickImport {
+    margin: 19px auto;
+    .tradingValContent {
+      span:nth-of-type(3) {
+        padding-left: 11px;
+        color: #2ebc84;
+      }
+      span:nth-of-type(2) {
+        padding-left: 11px;
+      }
+    }
+    :global {
+      .am-list-item {
+        border: 1px solid #2ebc84;
+      }
+    }
+    .allQuantity {
+      color: #00d38b;
+      margin-left: 4px;
+    }
+    .line {
+      margin-left: 4px;
+    }
+  }
+  .quickBalance {
+    font-size: 14px;
+    span:nth-of-type(1) {
+      color: #5e6d7e;
+      padding-right: 8px;
+    }
+    span:nth-of-type(3) {
+      color: #00d38b;
+      padding-left: 8px;
+    }
+  }
+  .quickBtn {
+    margin-top: 26px;
+    padding-bottom: 24px;
+  }
+}
+.modelContent {
+  background: var(--background-color-4);
+  // min-height: 142px;
+  .paymentModelTitle {
+    height: 67px;
+    line-height: 67px;
+    text-align: left;
+    padding-left: 24px;
+    font-size: 18px;
+    color: var(--main-text-1);
+    font-weight: 550;
+  }
+  :global {
+    .iconPX-zhifubao {
+      color: #1e89db;
+      font-size: 18px;
+      padding-right: 5px;
+    }
+
+    .iconPX-weixin {
+      color: #48ae97;
+      font-size: 18px;
+      padding-right: 5px;
+    }
+
+    .iconPX-yinhang {
+      color: #d5b35d;
+      font-size: 18px;
+      padding-right: 5px;
+    }
+    .am-list-extra {
+      flex-basis: 40% !important;
+      color: var(--main-text-1) !important;
+    }
+  }
+}
+.ListContent {
+  // height: 42px;
+  border-top: 1px solid #f5f6fb;
+  max-height: 350px;
+  overflow: auto;
+
+  .ListContentName {
+    font-size: 16px;
+    color: var(--main-text-1);
+
+    font-weight: 550;
+    padding-left: 8px;
+  }
+  .tradingOptimal {
+    color: #2ebc84;
+  }
+  .tradingOptimalPrice {
+    display: inline-block;
+    padding: 3px 9px;
+    background: #e9f7f2;
+    color: #2ebc84;
+    border-radius: 2px;
+    margin-left: 4px;
+    font-size: 12px;
+  }
+}
+.sellSelctPaymentContent {
+  padding: 24px 15px;
+  background: var(--background-color-4);
+  .buySellHeader {
+    display: flex;
+
+    div {
+      flex: 1;
+    }
+    div:nth-of-type(1) {
+      text-align: left;
+      font-size: 16px;
+      color: var(--main-text-1);
+      .headerPrompnt {
+        padding-left: 16px;
+      }
+    }
+
+    div:nth-of-type(2) {
+      text-align: right;
+    }
+  }
+  .listContent {
+    margin-top: 17px;
+  }
+  .footerBtn {
+    margin-top: 17px;
+  }
+}
+.paymentImg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.paymentName {
+  margin-left: 10px;
+}

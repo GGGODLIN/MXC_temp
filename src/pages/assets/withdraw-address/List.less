@@ -1,0 +1,72 @@
+@import '~@/mixins.less';
+
+.listView {
+  :global {
+    .am-swipe-content {
+      background-color: transparent;
+    }
+    .am-swipe-btn-text {
+      padding: 0;
+    }
+  }
+}
+
+.items {
+  padding: 20px 20px 70px;
+
+  label {
+    color: var(--main-text-1);
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .remark {
+    font-size: 16px;
+  }
+
+  .address {
+    font-size: 12px;
+    word-break: break-all;
+    color: var(--main-text-1);
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.box {
+  .flex-between-center;
+  flex: 1;
+  padding: 0 15px;
+  height: 70px;
+  border-radius: 4px;
+  background-color: var(--background-color-3);
+}
+
+.status {
+  font-size: 14px;
+}
+
+.right {
+  i {
+    font-size: 22px;
+    color: var(--main-text-1);
+  }
+}
+
+.delete {
+  width: 60px;
+  border-radius: 5px;
+  background-color: var(--down-color);
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  i {
+    font-size: #fff;
+  }
+}

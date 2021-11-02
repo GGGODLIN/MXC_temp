@@ -1,0 +1,66 @@
+.wrapper {
+  min-height: 100vh;
+  padding-top: 94px;
+  color: #fff;
+  background-color: #091e19;
+
+  &.app {
+    padding-top: 50px;
+  }
+
+  .content {
+    padding: 0 15px;
+
+    .head {
+      position: relative;
+      width: 345px;
+      height: 230px;
+      margin-bottom: 30px;
+      background: url(@/assets/img/voting/invite_head.png) no-repeat;
+      background-size: contain;
+
+      .website {
+        position: absolute;
+        top: 35px;
+        right: 18px;
+        padding-top: 3px;
+        border-top: 1px solid #fff;
+        line-height: 10px;
+        font-size: 14px;
+        color: #fff;
+      }
+
+      .qrcode {
+        position: absolute;
+        left: 13px;
+        bottom: 32px;
+        width: 50px;
+        height: 50px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .link {
+      .copy {
+        font-weight: 600;
+        font-size: 14px;
+        color: #00d38b;
+      }
+    }
+
+    :global {
+      .am-input-control input {
+        font-size: 12px;
+        color: #fff;
+      }
+
+      .am-input-item {
+        border-color: #297673;
+      }
+    }
+  }
+}

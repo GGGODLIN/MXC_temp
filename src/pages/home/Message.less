@@ -1,0 +1,56 @@
+@import '~@/mixins.less';
+.messageWrapper {
+  padding: 0 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--divider-color);
+  height: 22px;
+  overflow: hidden;
+  .flex-between-center();
+  .notificationWrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+    img {
+      width: 16px;
+    }
+    .carouselWrapper {
+      height: 20px !important;
+      :global {
+        .slider-slide {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+      a {
+        display: block;
+        height: 20px;
+        font-size: 12px;
+        padding-left: 6px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .message:global {
+    background-color: transparent;
+    color: var(--main-text-1);
+    font-size: 12px;
+  }
+  .msg {
+    color: var(--main-text-1);
+    display: inline-block;
+  }
+  :global {
+    .am-notice-bar-icon {
+      img {
+        width: 16px;
+      }
+    }
+    .iconfont {
+      color: var(--main-text-1);
+    }
+  }
+}

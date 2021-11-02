@@ -1,0 +1,46 @@
+.draw {
+  margin: 20px 0;
+
+  .head {
+    font-size: 16px;
+    color: #444545;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      background: #faad14;
+      margin-right: 5px;
+      margin-bottom: 2px;
+    }
+  }
+
+  .ticket {
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+      text-align: center;
+      margin-top: 5px;
+      flex: 0 0 20%;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.win {
+  .head {
+    &::before {
+      background: #2ebc84;
+    }
+  }
+
+  .ticket {
+    span {
+      color: #2ebc84;
+    }
+  }
+}

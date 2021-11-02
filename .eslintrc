@@ -1,0 +1,20 @@
+{
+  "extends": "eslint-config-umi",
+  "globals": {
+    "NODE_ENV": true,
+    "MXC_DEPLOY": true,
+    "PUBLIC_PATH": true,
+    "API_PATH": true,
+    "MXC_ORIGIN": true,
+    "SOCKETIO_ORIGIN": true,
+    "OTC_ORIGIN": true,
+    "CONTRACT_ORIGIN": true,
+    "CHAT_ORIGIN": true,
+    "OTC_API": true,
+    "HC_PATH": true
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/exhaustive-deps": "off"
+  }
+}

@@ -1,0 +1,108 @@
+.modal {
+  :global {
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-modal-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-top: 1px solid #e5e8f8;
+      height: 64px;
+      .ant-btn {
+        width: 160px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 2px;
+      }
+    }
+    .ant-checkbox-wrapper {
+      color: #75799e;
+    }
+    .am-modal-content {
+      width: 300px;
+      height: auto;
+    }
+    .am-modal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.banner {
+  height: 140px;
+  background: url('@/assets/img/anti-phishing-bg.png') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  img {
+    width: 48px;
+    height: 54px;
+    margin: 28px auto 10px;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #df384e;
+  }
+}
+
+.content {
+  padding: 16px 20px;
+  background: #fff;
+  .tip {
+    padding: 4px;
+    font-size: 12px;
+    margin: 0 auto;
+    border: 1px solid #ffe58f;
+    background: #fffbe6;
+    display: flex;
+    align-items: center;
+    color: #3d3d56;
+    width: max-content;
+    border-radius: 2px;
+    margin-bottom: 13px;
+    i {
+      color: #faad14;
+      margin-right: 9px;
+    }
+  }
+  .site {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 8px 13px;
+    border: 1px solid #e5e8f8;
+    margin-bottom: 14px;
+    span {
+      flex: 1;
+      color: #3d3d56;
+      font-size: 14px;
+    }
+    i {
+      color: #75799e;
+      margin-right: 7px;
+    }
+  }
+  .checkbox {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.btn {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-top: 1px solid #e5e8f8;
+  :global {
+    .am-button {
+      width: 160px;
+      height: 36px;
+      border-radius: 2px;
+    }
+  }
+}

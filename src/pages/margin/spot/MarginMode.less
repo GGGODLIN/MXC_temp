@@ -1,0 +1,56 @@
+.modeWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  & > span {
+    line-height: 28px;
+    margin-right: 15px;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+  }
+}
+
+.modeSelect {
+  flex: 1;
+  border: 1px solid var(--border-color-1);
+  border-radius: 4px;
+  .modeMask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.modeBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+}
+
+.optionsBox {
+  width: 100%;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  background: var(--background-color-4);
+  height: 76px;
+  z-index: 11;
+  border-radius: 4px;
+  p {
+    margin-bottom: 0;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    &.active {
+      color: var(--up-color);
+    }
+  }
+}

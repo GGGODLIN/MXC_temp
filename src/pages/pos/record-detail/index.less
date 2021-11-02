@@ -1,0 +1,38 @@
+.itemRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+  b {
+    color: var(--main-text-3);
+    font-size: 12px;
+  }
+  p {
+    color: var(--main-text-1);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  div > {
+    flex: 1 1 auto;
+    word-break: break-word;
+    width: 50%;
+  }
+  div:nth-of-type(3) {
+    text-align: right;
+  }
+}
+
+.title {
+  margin: 0 15px;
+  font-size: 20px;
+  color: var(--main-text-1);
+}
+
+.item {
+  border-bottom: 2px solid var(--border-color-2);
+  margin-bottom: 5px;
+}
+
+.items {
+  position: relative;
+  z-index: 1;
+}

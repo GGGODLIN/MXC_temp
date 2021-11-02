@@ -1,0 +1,141 @@
+.listConten {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid var(--divider-color);
+  position: relative;
+  .listInfo {
+    flex: 2;
+    text-align: left;
+
+    .listName {
+      font-size: 16px;
+      padding-top: 12px;
+
+      img {
+        width: 14px;
+        height: 14px;
+        margin-left: 4px;
+      }
+    }
+
+    .listAmount {
+      margin-top: 14px;
+      margin-bottom: 7px;
+      span:nth-of-type(2) {
+        padding-left: 6px;
+      }
+    }
+
+    .listLimit {
+      span:nth-of-type(1) {
+        padding-left: 6px;
+        padding-right: 4px;
+      }
+      span:nth-of-type(2) {
+        padding-right: 6px;
+      }
+    }
+
+    .listPayment {
+      padding-top: 8px;
+      padding-bottom: 12px;
+
+      :global {
+        .iconPX-zhifubao {
+          color: #1e89db;
+          font-size: 18px;
+        }
+
+        .iconPX-weixin {
+          color: #48ae97;
+          font-size: 18px;
+        }
+
+        .iconPX-yinhang {
+          color: #d5b35d;
+          font-size: 18px;
+        }
+      }
+      .payMethodContent:not(:first-child) {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .listBtn {
+    flex: 1;
+    text-align: right;
+    .listVolume {
+      margin-top: 16px;
+      color: #a8afc3;
+      span:nth-of-type(1) {
+        padding-right: 4px;
+      }
+      span:nth-of-type(2) {
+        padding-right: 4px;
+      }
+    }
+    .listPrice {
+      margin-top: 7px;
+      color: #5e6d7e;
+      font-size: 12px;
+    }
+
+    .listNumber {
+      font-size: 20px;
+      padding-top: 4px;
+      color: var(--main-text-1);
+    }
+
+    .listTradingBtn {
+      margin-top: 4px;
+      position: absolute;
+      right: 0px;
+      width: 87px;
+      height: 30px;
+      background: #2ebc84;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 30px;
+      color: #ffffff;
+    }
+  }
+}
+.creditCardContent {
+  width: 100%;
+  height: 40px;
+  margin: 40px auto;
+  background: var(--background-color-4);
+  text-align: center;
+  line-height: 40px;
+  color: var(--up-color);
+  border: 1px solid var(--otcquick-headeruser-icon);
+}
+.paymentImg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+:global {
+  .iconic_GreenDiamond {
+    color: #00b897;
+    font-size: 12px !important;
+    margin-left: 3px;
+  }
+}
+.needTradingContent {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 2px;
+  position: absolute;
+  border: 1px solid #e1e4ea;
+  bottom: 10px;
+  right: 0;
+  :global {
+    .iconic_back {
+      font-size: 12px;
+    }
+  }
+}

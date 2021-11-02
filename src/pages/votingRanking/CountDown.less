@@ -1,0 +1,58 @@
+.countdown {
+  position: relative;
+  width: 236px;
+
+  &.isOver {
+    .num {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &.isVoting {
+    .text {
+      color: #fff;
+    }
+    .num {
+      color: #ffd666 !important;
+    }
+  }
+
+  .text {
+    margin-bottom: 12px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .times {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.5);
+
+    .item {
+      width: 47px;
+      height: 56px;
+      border-radius: 4px;
+      padding: 4px 0;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+
+      .num {
+        display: block;
+        margin-bottom: 2px;
+        line-height: 28px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #fff;
+      }
+
+      .unit {
+        display: block;
+        line-height: 20px;
+        font-size: 12px;
+        color: #fff;
+      }
+    }
+  }
+}

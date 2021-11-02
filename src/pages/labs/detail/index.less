@@ -1,0 +1,19 @@
+@import '~@/mixins.less';
+.detail {
+  .boxWrap {
+    padding: 12px 25px;
+    background: var(--box-bg);
+    margin-bottom: 8px;
+  }
+
+  .scroll {
+    height: 100%;
+    overflow: auto;
+    &.h5 {
+      .inner-height(50px);
+    }
+    &.app {
+      // .inner-height(100px);
+    }
+  }
+}

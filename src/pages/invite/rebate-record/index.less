@@ -1,0 +1,144 @@
+.wrapper {
+  position: relative;
+  height: calc(100vh - 44px);
+  background-color: var(--background-color-3);
+
+  &.appWrapper {
+    height: 100vh;
+    padding-top: 44px;
+  }
+
+  :global {
+    .am-tabs-tab-bar-wrap {
+      display: none;
+    }
+  }
+
+  .content-wrapper {
+    height: calc(100vh - 44px);
+    overflow: auto;
+  }
+
+  .content {
+    height: calc(100vh - 44px);
+    padding-top: 10px;
+  }
+
+  .loading {
+    text-align: center;
+    font-size: 14px;
+    color: var(--main-text-1);
+  }
+}
+
+.tab {
+  overflow: inherit;
+
+  div {
+    position: relative;
+    margin-right: 10px;
+    white-space: nowrap;
+    color: var(--main-text-1);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      width: 70%;
+      height: 1px;
+      background-color: transparent;
+      transform: translateX(-50%);
+    }
+
+    &.active {
+      color: var(--main-text-1);
+    }
+
+    &.active::after {
+      background-color: var(--main-text-1);
+    }
+  }
+}
+
+.contentTab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  background-color: var(--background-color-4);
+
+  div {
+    flex: 1;
+    padding: 8px 0;
+    border-bottom: 1px solid transparent;
+    line-height: 28px;
+    text-align: center;
+    font-size: 15px;
+
+    &.active {
+      border-bottom-color: var(--up-color);
+      color: var(--up-color);
+    }
+  }
+}
+
+.table-item {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: var(--background-color-4);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tableHeader {
+  margin-bottom: 16px;
+}
+
+.tableHeaderLabel {
+  line-height: 20px;
+  font-size: 12px;
+  color: var(--main-text-2);
+}
+
+.tableHeaderValue {
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--main-text-1);
+}
+
+.tableItemLabel {
+  line-height: 20px;
+  font-size: 12px;
+  color: var(--main-text-3);
+
+  :global {
+    .iconfont {
+      font-size: 14px;
+    }
+  }
+}
+
+.tableItemValue {
+  margin-bottom: 6px;
+  line-height: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--main-text-1);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.textRight {
+  text-align: right;
+}

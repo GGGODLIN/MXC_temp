@@ -1,0 +1,108 @@
+.marginBottom24 {
+  margin-bottom: 24px;
+}
+
+.content {
+  .title {
+    padding: 20px 0;
+    margin-bottom: 0;
+    line-height: 34px;
+    font-size: 24px;
+    color: var(--main-text-1);
+  }
+
+  .select {
+    display: flex;
+    justify-content: space-between;
+    width: 166px;
+    height: 36px;
+    padding: 0 16px;
+    border: 1px solid var(--main-color-light);
+    border-radius: 2px;
+    line-height: 36px;
+  }
+
+  .explain {
+    line-height: 16px;
+    font-size: 12px;
+    color: var(--main-text-1);
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  .list {
+    position: relative;
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      margin-bottom: 8px;
+      border: 1px solid var(--main-color-light);
+      border-radius: 2px;
+
+      p {
+        margin-bottom: 8px;
+        line-height: 14px;
+        font-size: 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .tip {
+        color: var(--main-text-2);
+      }
+
+      .value {
+        color: var(--main-text-1);
+      }
+    }
+
+    .loading {
+      text-align: center;
+      font-size: 14px;
+      color: var(--main-text-1);
+    }
+
+    :global {
+      .am-list-view-scrollview-content {
+        width: 100%;
+      }
+    }
+  }
+
+  .contract-table {
+    width: 100%;
+    border: 1px solid var(--main-color-light);
+    border-radius: 2px;
+
+    tr {
+      border-bottom: 1px solid var(--main-color-light);
+      line-height: 22px;
+      font-family: PingFangSC-Medium;
+      font-size: 12px;
+    }
+
+    td {
+      padding: 8px;
+      border-right: 1px solid var(--main-color-light);
+
+      &:first-child {
+        width: 38%;
+        text-align: center;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.custom-body {
+  padding: 0;
+}

@@ -1,0 +1,144 @@
+@import '~@/mixins.less';
+
+.title {
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  span {
+    color: var(--main-text-1);
+    margin: 0 15px;
+    display: inline-block;
+    padding-bottom: 2px;
+  }
+  .active {
+    color: var(--main-text-1);
+    border-bottom: 2px solid var(--main-text-1);
+  }
+}
+
+.list {
+  height: 100%;
+  // overflow-y: scroll;
+  :global {
+    .am-tabs-tab-bar-wrap {
+      background-color: var(--background-color-4);
+    }
+
+    .am-tabs-default-bar-top {
+      // width: 50%;
+      margin: 0 auto;
+
+      .am-tabs-default-bar-tab {
+        color: var(--main-text-1);
+        font-size: 14px;
+        height: 32px;
+      }
+
+      .am-tabs-default-bar-tab-active {
+        color: var(--main-text-1);
+      }
+
+      .am-tabs-default-bar-underline {
+        background-color: var(--main-text-1);
+      }
+    }
+  }
+
+  .listBox {
+    padding: 24px 0;
+    .listScroll {
+      overflow: auto;
+      &.h5 {
+        height: calc(100vh - 140px);
+      }
+      &.app {
+        height: calc(100vh - 40px);
+      }
+    }
+    .listItem {
+      border-radius: 4px;
+      background: var(--background-color-2);
+      position: relative;
+      overflow: hidden;
+      margin: 0 14px 24px;
+
+      &.waiting {
+        height: 286px;
+        .flex-center-center();
+        &.dark {
+          background: url('@/assets/img/labs/halving-wait-dark.png') no-repeat center center;
+          background-size: 100%;
+        }
+        &.light {
+          background: url('@/assets/img/labs/halving-wait-light.png') no-repeat center center;
+          background-size: 100%;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          padding-top: 70px;
+        }
+      }
+      .listImg {
+        height: 205px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .bottom {
+        padding: 10px;
+        .bottomText {
+          border-bottom: 1px solid var(--divider-color);
+          h4 {
+            font-size: 18px;
+            margin-bottom: 0;
+            color: var(--main-text-1);
+          }
+          p {
+            margin-bottom: 8px;
+            margin-top: 0;
+          }
+        }
+        .timeItem,
+        p {
+          font-size: 12px;
+          color: var(--main-text-1);
+          margin-top: 6px;
+        }
+        .timeItem {
+          .flex-between-center();
+        }
+      }
+      .itemStatus {
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+    }
+  }
+}
+.riskModal {
+  :global {
+    .am-checkbox {
+      margin-right: 7px;
+    }
+    .am-button {
+      padding: 0 10px;
+    }
+  }
+  p {
+    text-align: left;
+  }
+  .title {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,28 @@
+@import '~@/mixins.less';
+
+.countdown {
+  // width: 180px;
+  display: inline-block;
+  font-size: 24px;
+  color: #2ebc84;
+  font-weight: 550;
+  div,
+  p {
+    width: 100%;
+    .flex-between-center();
+  }
+
+  .minutesContent {
+    height: 21px;
+    border-radius: 2px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .segmentation {
+    width: 5px;
+    height: 25px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}

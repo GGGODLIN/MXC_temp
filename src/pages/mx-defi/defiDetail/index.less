@@ -1,0 +1,143 @@
+.wrapper {
+  height: 100vh;
+  background-color: #fff;
+}
+.banner {
+  position: relative;
+  height: 148px;
+  background: #100f3e;
+  border-top: 1px solid transparent;
+  background-size: 100%;
+  h1 {
+    color: #fff;
+    margin: 32px 0 14px 17px;
+    font-size: 28px;
+    line-height: 28px;
+    position: relative;
+    width: 80%;
+    z-index: 1;
+  }
+
+  h2 {
+    color: #fff;
+    margin-left: 17px;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    width: 75%;
+  }
+
+  .bannerImg {
+    height: 145px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .link {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    color: #3d3d56;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 2;
+    background: #fff;
+    padding-left: 5px;
+  }
+}
+.optBox {
+  background-color: #fff;
+  border-top: 1px solid #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  .rules {
+    padding: 12px 17px;
+    border-radius: 4px;
+    p {
+      font-size: 12px;
+      color: var(--main-text-1);
+      margin-bottom: 5px;
+      color: #3d3d56;
+    }
+  }
+  .all {
+    color: var(--up-color);
+  }
+}
+
+.button {
+  margin-top: 30px;
+  padding: 0 15px;
+  p {
+    margin-bottom: 4px;
+  }
+  :global {
+    .am-checkbox-agree {
+      margin-left: 0;
+
+      .am-checkbox-agree-label {
+        color: var(--main-text-1);
+        font-size: 12px;
+        margin-left: 18px;
+      }
+    }
+    .am-checkbox-inner {
+      width: 14px;
+      height: 14px;
+      &::after {
+        width: 50%;
+        height: 50%;
+        left: 3px;
+      }
+    }
+    .am-button {
+      border-radius: 0;
+    }
+  }
+  .link {
+    color: var(--up-color);
+  }
+}
+
+.scroll {
+  overflow: auto;
+  height: calc(100vh - 50px);
+}
+.input {
+  padding: 30px 15px 0;
+  border-bottom: 10px solid #f4f5f7;
+  :global .am-input-item .am-input-control input {
+    color: #000;
+  }
+}
+.incomming {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-align: right;
+  color: #9ea1c0;
+  b {
+    color: #2ebc84;
+  }
+}
+.headerPrompnt {
+  display: flex;
+  div {
+    font-size: 10px;
+    flex: 1;
+  }
+  div:nth-of-type(1) {
+    text-align: left;
+  }
+  div:nth-of-type(2) {
+    text-align: right;
+  }
+}
+
+.bg {
+  background: #100f3e;
+}
